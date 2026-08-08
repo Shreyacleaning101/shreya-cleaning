@@ -1077,18 +1077,4 @@ img{
     padding: 16px;
   }
 
-}
-/* REAL BRAND LOGO */
-.brand-logo {
-  width: auto;
-  height: 54px;
-  max-width: 220px;
-  object-fit: contain;
-}
-
-@media (max-width: 600px) {
-  .brand-logo {
-    height: 46px;
-    max-width: 175px;
-  }
-}
+/*
