@@ -1302,7 +1302,146 @@ footer li{
             ⭐ View Our Google Reviews
         </a>
 
-    </div>
+    </div>/* REVIEWS */
+.reviews-section{
+  background:linear-gradient(135deg,#eef8f7,#ffffff);
+}
+
+.reviews-container{
+  width:min(1120px,92%);
+  margin:auto;
+  text-align:center;
+}
+
+.reviews-heading{
+  margin-bottom:38px;
+}
+
+.reviews-badge{
+  display:inline-block;
+  background:#dff4f1;
+  color:#086b68;
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.5px;
+  margin-bottom:12px;
+}
+
+.reviews-heading h2{
+  font-size:38px;
+  color:#123f42;
+  margin-bottom:8px;
+}
+
+.reviews-heading p{
+  color:#718080;
+}
+
+.rating-summary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.rating-summary strong{
+  font-size:34px;
+  color:#086b68;
+}
+
+.rating-summary span{
+  color:#f5b800;
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+.rating-summary small{
+  color:#687879;
+  font-weight:700;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  text-align:left;
+}
+
+.review-card{
+  background:white;
+  padding:26px;
+  border-radius:18px;
+  border:1px solid #dcebea;
+  box-shadow:0 10px 25px rgba(8,107,104,.08);
+  position:relative;
+  transition:.25s;
+}
+
+.review-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 16px 35px rgba(8,107,104,.13);
+}
+
+.review-stars{
+  color:#f5b800;
+  font-size:19px;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+.review-card p{
+  color:#536a6b;
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+.review-card strong{
+  display:block;
+  color:#086b68;
+  font-size:16px;
+}
+
+.review-card small{
+  color:#8a9999;
+  display:block;
+  margin-top:3px;
+}
+
+.reviews-button{
+  display:inline-block;
+  margin-top:30px;
+  background:#159447;
+  color:white;
+  padding:14px 24px;
+  border-radius:30px;
+  font-weight:800;
+  box-shadow:0 8px 20px rgba(21,148,71,.2);
+}
+
+.reviews-button:hover{
+  background:#107b3b;
+}
+
+@media(max-width:800px){
+
+  .reviews-heading h2{
+    font-size:30px;
+  }
+
+  .review-grid{
+    grid-template-columns:1fr;
+  }
+
+  .review-card{
+    padding:22px;
+  }
+
+}
 </section>!-- FOOTER -->
 <footer>
 
