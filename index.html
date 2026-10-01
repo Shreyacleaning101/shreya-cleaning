@@ -317,6 +317,23 @@
       z-index: 1;
     }
 
+    .hero-media {
+      border-radius: 20px;
+      overflow: hidden;
+      min-height: 320px;
+      background: #eaf3ff;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
+      border-radius: 20px;
+    }
+
     .clean-box {
       background: linear-gradient(135deg, #0b6efd, #57a5ff);
       color: #fff;
@@ -1246,19 +1263,21 @@
 
           <div class="hero-card-content">
 
-            <div class="clean-box">
+            <div class="hero-media">
+              <img
+                src="hero-image.jpg"
+                alt="Shreya Cleaning Services – Professional deep cleaning in Mumbai"
+                loading="eager"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
 
-              <i class="fa-solid fa-house-circle-check"></i>
-
-              <h3>
-                Complete Home Cleaning
-              </h3>
-
-              <p>
-                Choose the service that suits your home
-                and send your requirements directly to us.
-              </p>
-
+              <div class="clean-box" style="display:none;">
+                <i class="fa-solid fa-house-circle-check"></i>
+                <h3>Complete Home Cleaning</h3>
+                <p>
+                  Choose the service that suits your home
+                  and send your requirements directly to us.
+                </p>
+              </div>
             </div>
 
           </div>
@@ -1464,17 +1483,17 @@
 
           <div class="package-card">
 
-            <h3>Basic Cleaning</h3>
+            <h3>Empty Flats</h3>
 
             <div class="package-sub">
-              For regular home cleaning needs
+              Ideal for vacant or unfurnished homes
             </div>
 
             <ul class="package-list">
 
               <li>
                 <i class="fa-solid fa-check"></i>
-                General home cleaning
+                Full empty flat cleaning
               </li>
 
               <li>
@@ -1484,7 +1503,7 @@
 
               <li>
                 <i class="fa-solid fa-check"></i>
-                Floor cleaning
+                Floor cleaning & finishing
               </li>
 
               <li>
@@ -1496,9 +1515,9 @@
 
             <button
               class="btn btn-primary select-package"
-              data-package="Basic Cleaning">
+              data-package="Empty Flats">
 
-              Choose Basic
+              Choose Empty Flats
 
             </button>
 
@@ -1513,10 +1532,10 @@
               POPULAR
             </div>
 
-            <h3>Deep Cleaning</h3>
+            <h3>Standard Cleaning</h3>
 
             <div class="package-sub">
-              Detailed cleaning for your home
+              Detailed cleaning for furnished homes
             </div>
 
             <ul class="package-list">
@@ -1545,9 +1564,9 @@
 
             <button
               class="btn btn-primary select-package"
-              data-package="Deep Cleaning">
+              data-package="Standard Cleaning">
 
-              Choose Deep Cleaning
+              Choose Standard
 
             </button>
 
@@ -1561,19 +1580,19 @@
             <h3>Premium Cleaning</h3>
 
             <div class="package-sub">
-              Comprehensive cleaning solution
+              Comprehensive deep cleaning solution
             </div>
 
             <ul class="package-list">
 
               <li>
                 <i class="fa-solid fa-check"></i>
-                Complete home cleaning
+                Complete home deep cleaning
               </li>
 
               <li>
                 <i class="fa-solid fa-check"></i>
-                Kitchen & bathroom
+                Kitchen & bathroom deep clean
               </li>
 
               <li>
@@ -1583,7 +1602,7 @@
 
               <li>
                 <i class="fa-solid fa-check"></i>
-                Additional cleaning requirements
+                Walls, windows & extra areas
               </li>
 
             </ul>
@@ -1673,12 +1692,12 @@
                   Select package
                 </option>
 
-                <option value="Basic Cleaning">
-                  Basic Cleaning
+                <option value="Empty Flats">
+                  Empty Flats
                 </option>
 
-                <option value="Deep Cleaning">
-                  Deep Cleaning
+                <option value="Standard Cleaning">
+                  Standard Cleaning
                 </option>
 
                 <option value="Premium Cleaning">
@@ -1892,11 +1911,11 @@
           </div>
 
           <h2>
-            See Our Cleaning Work
+            See the Difference We Make
           </h2>
 
           <p>
-            Watch examples of cleaning work and service quality.
+            Real footage from our professional deep cleaning projects across Mumbai homes and offices.
           </p>
 
         </div>
@@ -1914,10 +1933,11 @@
                 playsinline
                 preload="metadata"
                 controlsList="nodownload"
+                poster="hero-image.jpg"
                 onerror="showVideoError(this)">
 
                 <source
-                  src="videos/cleaning1.mp4"
+                  src="VID_20260812_132413_700_bsl.mp4"
                   type="video/mp4">
 
                 Your browser does not support HTML5 video.
@@ -1926,7 +1946,7 @@
 
               <div class="video-error">
                 Video could not be loaded.<br>
-                Please check the MP4 filename and videos folder.
+                Please check your connection or try again later.
               </div>
 
             </div>
@@ -1934,11 +1954,11 @@
             <div class="video-info">
 
               <h3>
-                Professional Cleaning
+                Professional Deep Cleaning
               </h3>
 
               <p>
-                Cleaning process and service quality.
+                Real work from our trained cleaning team in Mumbai.
               </p>
 
             </div>
@@ -1955,10 +1975,11 @@
                 playsinline
                 preload="metadata"
                 controlsList="nodownload"
+                poster="hero-image.jpg"
                 onerror="showVideoError(this)">
 
                 <source
-                  src="videos/cleaning2.mp4"
+                  src="VID_20260813_101012_209_bsl.mp4"
                   type="video/mp4">
 
                 Your browser does not support HTML5 video.
@@ -1967,7 +1988,7 @@
 
               <div class="video-error">
                 Video could not be loaded.<br>
-                Please check the MP4 filename and videos folder.
+                Please check your connection or try again later.
               </div>
 
             </div>
@@ -1975,11 +1996,11 @@
             <div class="video-info">
 
               <h3>
-                Deep Cleaning
+                Detailed Home Cleaning
               </h3>
 
               <p>
-                Detailed cleaning for a fresher home.
+                Thorough attention to floors, surfaces and key areas.
               </p>
 
             </div>
@@ -1996,10 +2017,11 @@
                 playsinline
                 preload="metadata"
                 controlsList="nodownload"
+                poster="hero-image.jpg"
                 onerror="showVideoError(this)">
 
                 <source
-                  src="videos/cleaning3.mp4"
+                  src="VID_20260813_101300_381_bsl.mp4"
                   type="video/mp4">
 
                 Your browser does not support HTML5 video.
@@ -2008,7 +2030,7 @@
 
               <div class="video-error">
                 Video could not be loaded.<br>
-                Please check the MP4 filename and videos folder.
+                Please check your connection or try again later.
               </div>
 
             </div>
@@ -2016,11 +2038,11 @@
             <div class="video-info">
 
               <h3>
-                Home Cleaning
+                Quality Finish
               </h3>
 
               <p>
-                Professional cleaning for everyday spaces.
+                See the difference after a professional deep clean.
               </p>
 
             </div>
