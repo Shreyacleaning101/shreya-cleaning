@@ -1,2226 +1,2375 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Shreya Cleaning Services | Home & Commercial Deep Cleaning Mumbai</title>
-
-    <meta name="description"
-          content="Shreya Cleaning Services provides professional home, apartment, office, bathroom, kitchen, sofa and commercial deep cleaning services across Mumbai. Book your cleaning service today.">
-
-    <meta name="keywords"
-          content="home cleaning services Mumbai, deep cleaning Mumbai, house cleaning Mumbai, bathroom cleaning Mumbai, kitchen cleaning Mumbai, sofa cleaning Mumbai, office cleaning Mumbai">
-
-    <meta name="author" content="Shreya Cleaning Services">
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #172525;
-            background: #ffffff;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,0.97);
-            border-bottom: 1px solid #e7eeee;
-            backdrop-filter: blur(10px);
-        }
-
-        .navbar {
-            max-width: 1200px;
-            margin: auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #087f79, #12a69c);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .logo-text strong {
-            display: block;
-            font-size: 19px;
-            color: #087f79;
-        }
-
-        .logo-text span {
-            font-size: 11px;
-            color: #687878;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        nav a {
-            font-size: 14px;
-            font-weight: 600;
-            color: #334444;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #087f79;
-        }
-
-        .nav-btn {
-            background: #087f79;
-            color: white !important;
-            padding: 10px 18px;
-            border-radius: 25px;
-        }
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            background:
-                linear-gradient(120deg, rgba(240,251,249,0.97), rgba(255,255,255,0.92));
-            padding: 85px 20px;
-        }
-
-        .hero-container {
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: #e1f6f3;
-            color: #087f79;
-            padding: 8px 15px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 5vw, 65px);
-            line-height: 1.05;
-            margin-bottom: 22px;
-            color: #102727;
-        }
-
-        .hero h1 span {
-            color: #087f79;
-        }
-
-        .hero p {
-            max-width: 620px;
-            color: #5d6b6b;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 24px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: #087f79;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #05635e;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            border: 2px solid #087f79;
-            color: #087f79;
-            background: white;
-        }
-
-        .btn-secondary:hover {
-            background: #eaf8f6;
-        }
-
-        .hero-card {
-            background: white;
-            border-radius: 25px;
-            padding: 35px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.09);
-            border: 1px solid #e5eeee;
-        }
-
-        .hero-clean-icon {
-            width: 80px;
-            height: 80px;
-            background: #e4f7f4;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .hero-card h3 {
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-
-        .hero-card p {
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-
-        .trust-row {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-        }
-
-        .trust-item {
-            text-align: center;
-            padding: 14px 5px;
-            background: #f6fbfa;
-            border-radius: 12px;
-        }
-
-        .trust-item strong {
-            display: block;
-            color: #087f79;
-            font-size: 20px;
-        }
-
-        .trust-item span {
-            font-size: 11px;
-            color: #667;
-        }
-
-        /* =========================
-           COMMON
-        ========================= */
-
-        section {
-            padding: 85px 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .section-heading {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 50px;
-        }
-
-        .section-heading small {
-            color: #087f79;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-        }
-
-        .section-heading h2 {
-            font-size: clamp(30px,4vw,45px);
-            margin: 10px 0 15px;
-            color: #132828;
-        }
-
-        .section-heading p {
-            color: #697777;
-        }
-
-        /* =========================
-           SERVICES
-        ========================= */
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 20px;
-        }
-
-        .service-card {
-            padding: 28px;
-            border: 1px solid #e2ebea;
-            border-radius: 18px;
-            background: white;
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-        }
-
-        .service-icon {
-            width: 55px;
-            height: 55px;
-            background: #e5f7f4;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 27px;
-            margin-bottom: 18px;
-        }
-
-        .service-card h3 {
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-
-        .service-card p {
-            color: #687777;
-            font-size: 14px;
-        }
-
-        /* =========================
-           PACKAGES
-        ========================= */
-
-        #packages {
-            background: #f5faf9;
-        }
-
-        .package-grid {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 25px;
-        }
-
-        .package-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            border: 1px solid #dfe9e8;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .package-card.featured {
-            border: 2px solid #087f79;
-            box-shadow: 0 18px 45px rgba(8,127,121,0.13);
-            transform: translateY(-8px);
-        }
-
-        .package-label {
-            color: #087f79;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .package-card h3 {
-            font-size: 26px;
-            margin-bottom: 8px;
-        }
-
-        .package-subtitle {
-            color: #667777;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-        .starting {
-            font-size: 13px;
-            color: #687777;
-        }
-
-        .starting strong {
-            display: block;
-            font-size: 30px;
-            color: #087f79;
-            margin-bottom: 18px;
-        }
-
-        .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0 25px;
-        }
-
-        .price-table th,
-        .price-table td {
-            padding: 10px 7px;
-            border-bottom: 1px solid #e8eeee;
-            text-align: left;
-            font-size: 13px;
-        }
-
-        .price-table th {
-            color: #566666;
-        }
-
-        .price-table td:last-child,
-        .price-table th:last-child {
-            text-align: right;
-            font-weight: bold;
-        }
-
-        .included-title {
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-
-        .included {
-            list-style: none;
-            margin-bottom: 25px;
-            flex-grow: 1;
-        }
-
-        .included li {
-            position: relative;
-            padding-left: 22px;
-            margin-bottom: 9px;
-            font-size: 13px;
-            color: #526262;
-        }
-
-        .included li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #087f79;
-            font-weight: bold;
-        }
-
-        .package-btn {
-            width: 100%;
-            text-align: center;
-        }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .about-box {
-            background: #eaf8f6;
-            padding: 40px;
-            border-radius: 25px;
-        }
-
-        .about-box h2 {
-            font-size: 38px;
-            margin-bottom: 18px;
-        }
-
-        .about-box p {
-            color: #5d6c6c;
-            margin-bottom: 15px;
-        }
-
-        .about-points {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .about-point {
-            background: white;
-            padding: 18px;
-            border-radius: 12px;
-        }
-
-        .about-point strong {
-            display: block;
-            color: #087f79;
-            margin-bottom: 5px;
-        }
-
-        .about-point span {
-            font-size: 13px;
-            color: #687777;
-        }
-
-        /* =========================
-           WHY US
-        ========================= */
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 18px;
-        }
-
-        .why-card {
-            text-align: center;
-            padding: 28px 18px;
-            border-radius: 18px;
-            background: #f7fbfa;
-        }
-
-        .why-card .icon {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
-
-        .why-card h3 {
-            font-size: 17px;
-            margin-bottom: 8px;
-        }
-
-        .why-card p {
-            font-size: 13px;
-            color: #697777;
-        }
-
-        /* =========================
-           SERVICE AREA
-        ========================= */
-
-        .area-section {
-            background: #102727;
-            color: white;
-        }
-
-        .area-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .area-section h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .area-section p {
-            color: #c6d3d2;
-            margin-bottom: 20px;
-        }
-
-        .area-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .area-list div {
-            background: rgba(255,255,255,0.08);
-            padding: 13px;
-            border-radius: 8px;
-            font-size: 13px;
-        }
-
-        .area-contact {
-            background: white;
-            color: #172525;
-            padding: 35px;
-            border-radius: 20px;
-        }
-
-        .area-contact h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .contact-number {
-            font-size: 22px;
-            font-weight: bold;
-            color: #087f79;
-            margin: 15px 0;
-        }
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 40px;
-        }
-
-        .contact-info {
-            background: #eaf8f6;
-            border-radius: 20px;
-            padding: 35px;
-        }
-
-        .contact-info h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .contact-item {
-            margin: 22px 0;
-        }
-
-        .contact-item strong {
-            display: block;
-            color: #087f79;
-            margin-bottom: 4px;
-        }
-
-        .contact-item span {
-            color: #596969;
-            font-size: 14px;
-        }
-
-        .contact-form {
-            padding: 35px;
-            border: 1px solid #e2ebea;
-            border-radius: 20px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .form-group {
-            margin-bottom: 17px;
-        }
-
-        label {
-            display: block;
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 7px;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 13px;
-            border: 1px solid #d5e0df;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 14px;
-            outline: none;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #087f79;
-        }
-
-        textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background: #081c1c;
-            color: white;
-            padding: 50px 20px 25px;
-        }
-
-        .footer-grid {
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr;
-            gap: 40px;
-        }
-
-        footer h3 {
-            margin-bottom: 15px;
-        }
-
-        footer p,
-        footer li {
-            color: #aebebe;
-            font-size: 13px;
-        }
-
-        footer ul {
-            list-style: none;
-        }
-
-        footer li {
-            margin-bottom: 8px;
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 35px auto 0;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-            color: #91a2a2;
-            font-size: 12px;
-        }
-
-        /* =========================
-           FLOATING WHATSAPP
-        ========================= */
-
-        .whatsapp {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            background: #20b85a;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 27px;
-            z-index: 999;
-            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
-        }
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 900px) {
-
-            nav {
-                display: none;
-            }
-
-            .hero-container,
-            .about-grid,
-            .area-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid,
-            .package-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .package-card.featured {
-                transform: none;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding: 60px 20px;
-            }
-
-            section {
-                padding: 60px 20px;
-            }
-        }
-
-        @media (max-width: 600px) {
-
-            .navbar {
-                padding: 10px 15px;
-            }
-
-            .logo-icon {
-                width: 40px;
-                height: 40px;
-            }
-
-            .logo-text strong {
-                font-size: 16px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            .trust-row {
-                grid-template-columns: 1fr;
-            }
-
-            .why-grid,
-            .about-points,
-            .area-list,
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .area-section h2 {
-                font-size: 32px;
-            }
-
-            .contact-form,
-            .contact-info,
-            .about-box,
-            .hero-card {
-                padding: 25px;
-            }
-
-            .price-table th,
-            .price-table td {
-                font-size: 12px;
-            }
-        }
-
-    </style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shreya Cleaning Services | Professional Deep Cleaning in Mumbai</title>
+
+  <meta name="description"
+        content="Shreya Cleaning Services provides professional home, office and deep cleaning services in Mumbai. 3-layer deep cleaning with wall cleaning included. Call or WhatsApp for a quote.">
+
+  <meta name="keywords"
+        content="deep cleaning Mumbai, home cleaning Mumbai, house cleaning Kandivali, office cleaning Mumbai, sofa cleaning, bathroom cleaning, kitchen cleaning, Shreya Cleaning Services">
+
+  <meta name="author" content="Shreya Cleaning Services">
+
+  <!-- Google Ads / Google Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18327483486"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'AW-18327483486');
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #16834b;
+      --dark-green: #0c5f36;
+      --light-green: #eaf8f0;
+      --lime: #b7e36b;
+      --dark: #10231a;
+      --text: #405047;
+      --white: #ffffff;
+      --light: #f6faf8;
+      --border: #dcebe3;
+      --shadow: 0 20px 60px rgba(15, 66, 42, 0.10);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(220,235,227,0.8);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 13px;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 18px;
+      color: var(--dark);
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    nav a {
+      color: #405047;
+      font-weight: 600;
+      font-size: 14px;
+      transition: .25s;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .nav-call {
+      background: var(--green);
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 100px;
+    }
+
+    .nav-call:hover {
+      background: var(--dark-green);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(183,227,107,.25), transparent 28%),
+        linear-gradient(135deg, #f3fbf6 0%, #ffffff 60%);
+      padding: 75px 0 85px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--light-green);
+      color: var(--dark-green);
+      padding: 8px 13px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    h1 {
+      font-family: "Manrope", sans-serif;
+      color: var(--dark);
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.04;
+      letter-spacing: -2.5px;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .hero-text {
+      font-size: 18px;
+      max-width: 620px;
+      color: #596a61;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: .25s;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: white;
+      box-shadow: 0 12px 25px rgba(22,131,75,.20);
+    }
+
+    .btn-primary:hover {
+      background: var(--dark-green);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      background: white;
+      color: var(--dark);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #53645b;
+    }
+
+    .hero-trust span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-trust b {
+      color: var(--green);
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      min-height: 480px;
+      object-fit: cover;
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      background: #e8f3ed;
+    }
+
+    .hero-card {
+      position: absolute;
+      left: -25px;
+      bottom: 28px;
+      background: white;
+      padding: 18px 20px;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.12);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-card-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 13px;
+      background: var(--light-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    .hero-card strong {
+      display: block;
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    .hero-card span {
+      font-size: 12px;
+      color: #68776f;
+    }
+
+    /* =========================
+       SECTION
+    ========================== */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 720px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(31px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+      color: var(--dark);
+      margin-bottom: 15px;
+    }
+
+    .section-head p {
+      color: #63736a;
+      font-size: 16px;
+    }
+
+    /* =========================
+       3 LAYERS
+    ========================== */
+
+    .layers {
+      background: var(--light);
+    }
+
+    .layer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .layer-card {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: var(--radius);
+      position: relative;
+      transition: .3s;
+    }
+
+    .layer-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .layer-number {
+      font-family: "Manrope", sans-serif;
+      color: #b7c9be;
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .layer-card h3 {
+      color: var(--dark);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .layer-card p {
+      color: #68776f;
+      font-size: 14px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 20px;
+      background: white;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #b8dbc7;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--light-green);
+      color: var(--green);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 17px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .service-card p {
+      color: #718078;
+      font-size: 13px;
+    }
+
+    /* =========================
+       PRICING
+    ========================== */
+
+    .pricing {
+      background: var(--light);
+    }
+
+    .pricing-note {
+      text-align: center;
+      max-width: 700px;
+      margin: -25px auto 35px;
+      color: #63736a;
+      font-size: 14px;
+    }
+
+    .pricing-wrap {
+      overflow-x: auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 12px 40px rgba(15,66,42,.06);
+    }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 650px;
+    }
+
+    .pricing-table th {
+      background: var(--dark-green);
+      color: white;
+      text-align: left;
+      padding: 19px 22px;
+      font-size: 14px;
+    }
+
+    .pricing-table td {
+      padding: 20px 22px;
+      border-bottom: 1px solid #e8f0eb;
+      color: #4c5d54;
+      font-weight: 600;
+    }
+
+    .pricing-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .pricing-table td:first-child {
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    .price {
+      color: var(--green);
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .pricing-bottom {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      background: var(--light-green);
+      border-radius: 18px;
+    }
+
+    .pricing-bottom strong {
+      color: var(--dark);
+    }
+
+    .pricing-bottom p {
+      font-size: 13px;
+      color: #63736a;
+    }
+
+    /* =========================
+       INCLUDED
+    ========================== */
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .included-image img {
+      height: 520px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 28px;
+      background: #e8f3ed;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #53635b;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .check {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--light-green);
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .wall-note {
+      margin-top: 28px;
+      padding: 20px;
+      background: var(--light-green);
+      border-left: 4px solid var(--green);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .wall-note strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .wall-note p {
+      font-size: 13px;
+      color: #63736a;
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process {
+      background: var(--dark);
+      color: white;
+    }
+
+    .process .section-label {
+      color: var(--lime);
+    }
+
+    .process h2 {
+      color: white;
+    }
+
+    .process .section-head p {
+      color: #b8c8c0;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .process-card {
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .process-card span {
+      color: var(--lime);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .process-card h3 {
+      margin: 10px 0 8px;
+      font-size: 18px;
+    }
+
+    .process-card p {
+      color: #b9c7c0;
+      font-size: 13px;
+    }
+
+    /* =========================
+       WHY US
+    ========================== */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .why-card-number {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .why-card p {
+      color: #68776f;
+      font-size: 14px;
+    }
+
+    /* =========================
+       GALLERY
+    ========================== */
+
+    .gallery {
+      background: var(--light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-rows: 220px 220px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      border-radius: 20px;
+      overflow: hidden;
+      background: #e3eee8;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    /* =========================
+       TESTIMONIALS
+    ========================== */
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .testimonial {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(15,66,42,.04);
+    }
+
+    .stars {
+      color: #e9a800;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial p {
+      color: #56665d;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .customer {
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    /* =========================
+       FAQ
+    ========================== */
+
+    .faq {
+      background: var(--light);
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      padding: 20px 22px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--dark);
+      font-weight: 800;
+      list-style: none;
+      position: relative;
+      padding-right: 25px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin-top: 13px;
+      color: #68776f;
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      padding: 35px 0 90px;
+    }
+
+    .cta-box {
+      background:
+        radial-gradient(circle at 90% 20%, rgba(183,227,107,.2), transparent 30%),
+        var(--dark-green);
+      border-radius: 30px;
+      padding: 55px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cta-box h2 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      color: #c5d6cc;
+      max-width: 620px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons .btn-primary {
+      background: var(--lime);
+      color: #17331f;
+      box-shadow: none;
+    }
+
+    .cta-buttons .btn-outline {
+      background: transparent;
+      color: white;
+      border-color: rgba(255,255,255,.3);
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 22px;
+      background: white;
+    }
+
+    .contact-card h3 {
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--light-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+
+    .contact-row strong {
+      display: block;
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    .contact-row span {
+      font-size: 13px;
+      color: #68776f;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .socials a {
+      padding: 10px 15px;
+      border-radius: 100px;
+      background: var(--light-green);
+      color: var(--dark-green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #081a11;
+      color: #aebeb5;
+      padding: 45px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr;
+      gap: 40px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 13px;
+      color: #aebeb5;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      font-size: 12px;
+    }
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================== */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1500;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.2);
+      transition: .25s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 1000px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero-grid,
+      .included-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 55px 0 70px;
+      }
+
+      .hero-image {
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      section {
+        padding: 65px 0;
+      }
+
+      h1 {
+        font-size: 43px;
+        letter-spacing: -1.8px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .hero-image img {
+        min-height: 350px;
+      }
+
+      .hero-card {
+        left: 12px;
+        bottom: 15px;
+      }
+
+      .layer-grid,
+      .service-grid,
+      .process-grid,
+      .why-grid,
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .check-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 190px 190px 190px;
+      }
+
+      .gallery-item:first-child {
+        grid-row: span 2;
+      }
+
+      .pricing-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta-box {
+        padding: 35px 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .logo-text strong {
+        font-size: 16px;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-<header>
+  <header>
+    <div class="container nav">
 
-    <div class="navbar">
+      <a href="#" class="logo">
 
-        <a href="#home" class="logo-area">
+        <div class="logo-mark">
+          SC
+        </div>
 
-            <div class="logo-icon">
-                S
-            </div>
+        <div class="logo-text">
+          <strong>Shreya Cleaning</strong>
+          <span>Professional Cleaning Services</span>
+        </div>
 
-            <div class="logo-text">
-                <strong>Shreya Cleaning</strong>
-                <span>Professional Cleaning Services</span>
-            </div>
+      </a>
 
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#process">Process</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+
+        <a class="nav-call"
+           href="tel:+918657550058"
+           onclick="trackCall()">
+          Call Now
         </a>
-
-        <nav>
-
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#packages">Packages</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-
-            <a class="nav-btn"
-               href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services,%20I%20want%20to%20book%20a%20cleaning%20service.">
-                WhatsApp Us
-            </a>
-
-        </nav>
+      </nav>
 
     </div>
+  </header>
 
-</header>
 
+  <!-- =========================
+       HERO
+  ========================== -->
 
-<!-- =========================
-     HERO
-========================= -->
+  <section class="hero">
 
-<section class="hero" id="home">
+    <div class="container hero-grid">
 
-    <div class="hero-container">
+      <div>
 
-        <div>
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Professional Cleaning Services in Mumbai
+        </div>
 
-            <span class="hero-badge">
-                PROFESSIONAL CLEANING SERVICES • MUMBAI
-            </span>
+        <h1>
+          A Deeper Clean.<br>
+          <span>A Better Finish.</span>
+        </h1>
 
-            <h1>
-                A Cleaner Home.<br>
-                <span>A Better Feeling.</span>
-            </h1>
+        <p class="hero-text">
+          Professional home and office deep cleaning with a
+          detailed 3-layer cleaning process designed for a
+          cleaner, fresher and more finished space.
+        </p>
 
-            <p>
-                Professional deep cleaning for homes, apartments,
-                offices and commercial spaces across Mumbai.
-                Our trained cleaning professionals help make your
-                space fresh, clean and ready to enjoy.
-            </p>
+        <div class="hero-buttons">
 
-            <div class="hero-buttons">
+          <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20to%20know%20more%20about%20your%20deep%20cleaning%20services."
+             class="btn btn-primary"
+             target="_blank"
+             onclick="trackWhatsApp()">
+            💬 WhatsApp Us
+          </a>
 
-                <a class="btn btn-primary"
-                   href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services,%20I%20want%20a%20cleaning%20quotation.">
-                    WhatsApp for Quote
-                </a>
-
-                <a class="btn btn-secondary"
-                   href="tel:+919321879581">
-                    Call +91 93218 79581
-                </a>
-
-            </div>
+          <a href="tel:+918657550058"
+             class="btn btn-outline"
+             onclick="trackCall()">
+            📞 Call for a Quote
+          </a>
 
         </div>
 
+        <div class="hero-trust">
+
+          <span><b>✓</b> 3-Layer Cleaning</span>
+          <span><b>✓</b> Wall Cleaning Included</span>
+          <span><b>✓</b> Home & Office</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <!-- Replace with your actual hero image -->
+        <img
+          src="images/hero-image.jpg"
+          alt="Professional cleaner providing deep cleaning service"
+          onerror="this.style.background='#e8f3ed'; this.removeAttribute('src');">
 
         <div class="hero-card">
 
-            <div class="hero-clean-icon">
-                ✨
-            </div>
+          <div class="hero-card-icon">
+            ✓
+          </div>
 
-            <h3>
-                Deep Cleaning Made Simple
-            </h3>
-
-            <p>
-                Choose the cleaning package that suits your
-                home's condition and get a professional cleaning
-                service at your convenience.
-            </p>
-
-            <div class="trust-row">
-
-                <div class="trust-item">
-                    <strong>500+</strong>
-                    <span>Mumbai Families</span>
-                </div>
-
-                <div class="trust-item">
-                    <strong>3</strong>
-                    <span>Home Packages</span>
-                </div>
-
-                <div class="trust-item">
-                    <strong>100%</strong>
-                    <span>Professional Service</span>
-                </div>
-
-            </div>
+          <div>
+            <strong>Deep Cleaning</strong>
+            <span>Done in 3 detailed layers</span>
+          </div>
 
         </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+  <!-- =========================
+       3 LAYERS
+  ========================== -->
 
-<section id="services">
+  <section class="layers">
 
     <div class="container">
 
-        <div class="section-heading">
+      <div class="section-head">
 
-            <small>Our Services</small>
+        <div class="section-label">
+          Our Cleaning Method
+        </div>
 
-            <h2>
-                Cleaning Services for Every Space
-            </h2>
+        <h2>
+          Deep Cleaning, Done in 3 Layers
+        </h2>
 
-            <p>
-                From complete home deep cleaning to individual
-                cleaning requirements, we provide professional
-                cleaning solutions across Mumbai.
-            </p>
+        <p>
+          A deeper clean. A better finish.
+          Our process goes beyond basic surface cleaning.
+        </p>
+
+      </div>
+
+
+      <div class="layer-grid">
+
+        <div class="layer-card">
+
+          <div class="layer-number">01</div>
+
+          <h3>Dust</h3>
+
+          <p>
+            Removal of dust, cobwebs and loose dirt from
+            surfaces, corners and accessible areas.
+          </p>
 
         </div>
 
 
-        <div class="services-grid">
+        <div class="layer-card">
 
+          <div class="layer-number">02</div>
 
-            <div class="service-card">
+          <h3>Wipe</h3>
 
-                <div class="service-icon">🏠</div>
-
-                <h3>Home Deep Cleaning</h3>
-
-                <p>
-                    Complete cleaning of floors, bathrooms,
-                    kitchen, windows, balconies, doors, fans,
-                    cupboards and other accessible areas.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🍳</div>
-
-                <h3>Kitchen Cleaning</h3>
-
-                <p>
-                    Detailed kitchen cleaning including platforms,
-                    backsplash, cabinets, surfaces, grease and
-                    accessible storage areas.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🚿</div>
-
-                <h3>Bathroom Cleaning</h3>
-
-                <p>
-                    Professional bathroom cleaning covering
-                    tiles, floors, fittings, wash areas,
-                    walls and accessible surfaces.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🛋️</div>
-
-                <h3>Sofa Cleaning</h3>
-
-                <p>
-                    Professional sofa cleaning to remove
-                    accumulated dust, dirt and surface stains
-                    from suitable fabric and upholstery.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🛏️</div>
-
-                <h3>Mattress Cleaning</h3>
-
-                <p>
-                    Mattress cleaning to help remove dust,
-                    dirt and surface-level buildup from
-                    suitable mattresses.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🏢</div>
-
-                <h3>Commercial Cleaning</h3>
-
-                <p>
-                    Cleaning solutions for offices, hotels,
-                    clinics, salons, restaurants, cafés,
-                    retail spaces and other commercial areas.
-                </p>
-
-            </div>
+          <p>
+            Wet wiping to tackle grime, stains, buildup
+            and everyday dirt from surfaces.
+          </p>
 
         </div>
+
+
+        <div class="layer-card">
+
+          <div class="layer-number">03</div>
+
+          <h3>Dry & Finish</h3>
+
+          <p>
+            Final dry cleaning and finishing to leave the
+            space clean, neat and fresh.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
-<!-- =========================
-     PACKAGES
-========================= -->
+  <!-- =========================
+       SERVICES
+  ========================== -->
 
-<section id="packages">
+  <section id="services">
 
     <div class="container">
 
-        <div class="section-heading">
+      <div class="section-head">
 
-            <small>Home Cleaning Packages</small>
-
-            <h2>
-                Choose Your Deep Cleaning Package
-            </h2>
-
-            <p>
-                Three options designed for different cleaning
-                requirements — from regular deep cleaning to
-                complete vacant-home cleaning.
-            </p>
-
+        <div class="section-label">
+          Our Services
         </div>
 
+        <h2>
+          Cleaning for Every Important Area
+        </h2>
 
-        <div class="package-grid">
+        <p>
+          Professional cleaning solutions for homes,
+          apartments, offices and individual areas.
+        </p>
 
+      </div>
 
-            <!-- STANDARD -->
 
-            <div class="package-card">
+      <div class="service-grid">
 
-                <span class="package-label">
-                    Standard Package
-                </span>
-
-                <h3>
-                    Standard Deep Cleaning
-                </h3>
-
-                <p class="package-subtitle">
-                    Surface & Exterior-Focused Home Cleaning
-                </p>
-
-                <div class="starting">
-                    Starting From
-                    <strong>₹3,499</strong>
-                </div>
-
-
-                <table class="price-table">
-
-                    <tr>
-                        <th>Home Type</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>1RK</td>
-                        <td>₹3,499</td>
-                    </tr>
-
-                    <tr>
-                        <td>1BHK</td>
-                        <td>₹3,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>2BHK</td>
-                        <td>₹5,499</td>
-                    </tr>
-
-                    <tr>
-                        <td>3BHK</td>
-                        <td>₹6,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>4BHK</td>
-                        <td>₹9,499</td>
-                    </tr>
-
-                </table>
-
-
-                <h4 class="included-title">
-                    What's Included
-                </h4>
-
-                <ul class="included">
-
-                    <li>Floor vacuuming, scrubbing & mopping</li>
-                    <li>Bathroom deep cleaning</li>
-                    <li>Kitchen exterior cleaning</li>
-                    <li>Kitchen platform & backsplash</li>
-                    <li>Exterior cupboards & wardrobes</li>
-                    <li>Exterior kitchen cabinets</li>
-                    <li>Doors & door frames</li>
-                    <li>Windows & window frames</li>
-                    <li>Balcony cleaning</li>
-                    <li>Fans & switchboards</li>
-                    <li>Dusting & cobweb removal</li>
-                    <li>Accessible surface cleaning</li>
-
-                </ul>
-
-
-                <a class="btn btn-primary package-btn"
-                   href="https://wa.me/918657550058?text=Hello,%20I%20am%20interested%20in%20the%20Standard%20Deep%20Cleaning%20package.">
-                    Book Standard Cleaning
-                </a>
-
-            </div>
-
-
-            <!-- LUXURY -->
-
-            <div class="package-card featured">
-
-                <span class="package-label">
-                    Most Detailed
-                </span>
-
-                <h3>
-                    Luxury Deep Cleaning
-                </h3>
-
-                <p class="package-subtitle">
-                    Complete Interior + Exterior Home Cleaning
-                </p>
-
-                <div class="starting">
-                    Starting From
-                    <strong>₹3,999</strong>
-                </div>
-
-
-                <table class="price-table">
-
-                    <tr>
-                        <th>Home Type</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>1RK</td>
-                        <td>₹3,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>1BHK</td>
-                        <td>₹4,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>2BHK</td>
-                        <td>₹6,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>3BHK</td>
-                        <td>₹8,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>4BHK</td>
-                        <td>₹12,499</td>
-                    </tr>
-
-                </table>
-
-
-                <h4 class="included-title">
-                    What's Included
-                </h4>
-
-                <ul class="included">
-
-                    <li>Everything included in Standard</li>
-                    <li>Interior & exterior wardrobes</li>
-                    <li>Interior & exterior cupboards</li>
-                    <li>Kitchen cabinet interior & exterior</li>
-                    <li>Drawers, shelves & storage areas</li>
-                    <li>Wall washing / spot cleaning</li>
-                    <li>Detailed kitchen degreasing</li>
-                    <li>Detailed bathroom cleaning</li>
-                    <li>Windows & frames</li>
-                    <li>Skirting cleaning</li>
-                    <li>Detailed floor scrubbing</li>
-                    <li>Ceiling & corner dust removal</li>
-                    <li>Final finishing & inspection</li>
-
-                </ul>
-
-
-                <a class="btn btn-primary package-btn"
-                   href="https://wa.me/918657550058?text=Hello,%20I%20am%20interested%20in%20the%20Luxury%20Deep%20Cleaning%20package.">
-                    Book Luxury Cleaning
-                </a>
-
-            </div>
-
-
-            <!-- EMPTY FLAT -->
-
-            <div class="package-card">
-
-                <span class="package-label">
-                    Vacant Home
-                </span>
-
-                <h3>
-                    Empty Flat Deep Cleaning
-                </h3>
-
-                <p class="package-subtitle">
-                    Complete Cleaning for Vacant & Unfurnished Homes
-                </p>
-
-                <div class="starting">
-                    Starting From
-                    <strong>₹2,999</strong>
-                </div>
-
-
-                <table class="price-table">
-
-                    <tr>
-                        <th>Home Type</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>1RK</td>
-                        <td>₹2,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>1BHK</td>
-                        <td>₹3,499</td>
-                    </tr>
-
-                    <tr>
-                        <td>2BHK</td>
-                        <td>₹4,499</td>
-                    </tr>
-
-                    <tr>
-                        <td>3BHK</td>
-                        <td>₹5,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>4BHK</td>
-                        <td>₹7,499</td>
-                    </tr>
-
-                </table>
-
-
-                <h4 class="included-title">
-                    What's Included
-                </h4>
-
-                <ul class="included">
-
-                    <li>Complete floor vacuuming & scrubbing</li>
-                    <li>Bathroom deep cleaning</li>
-                    <li>Kitchen cleaning</li>
-                    <li>Kitchen platform & backsplash</li>
-                    <li>Interior & exterior empty cupboards</li>
-                    <li>Interior & exterior wardrobes</li>
-                    <li>Kitchen cabinets</li>
-                    <li>Drawers, shelves & storage</li>
-                    <li>Wall washing / spot cleaning</li>
-                    <li>Doors & frames</li>
-                    <li>Windows & frames</li>
-                    <li>Balcony cleaning</li>
-                    <li>Fans & switchboards</li>
-                    <li>Skirting cleaning</li>
-                    <li>Cobweb & accumulated dust removal</li>
-                    <li>Ceiling & corner cleaning</li>
-                    <li>Final floor cleaning</li>
-
-                </ul>
-
-
-                <a class="btn btn-primary package-btn"
-                   href="https://wa.me/918657550058?text=Hello,%20I%20am%20interested%20in%20the%20Empty%20Flat%20Deep%20Cleaning%20package.">
-                    Book Empty Flat Cleaning
-                </a>
-
-            </div>
-
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Home Deep Cleaning</h3>
+          <p>
+            Detailed cleaning for apartments and homes.
+          </p>
         </div>
 
-
-        <div style="
-            max-width:900px;
-            margin:35px auto 0;
-            padding:20px;
-            background:white;
-            border-radius:12px;
-            border:1px solid #e1e9e8;
-            font-size:13px;
-            color:#667;
-        ">
-
-            <strong>Important:</strong>
-            Prices are starting prices. Final pricing may vary depending
-            on the size, condition, level of dirt, accessibility and
-            cleaning requirements of the property. Heavy stains,
-            paint marks, cement deposits and specialised cleaning may
-            attract additional charges. Sofa, mattress and carpet
-            cleaning can be booked as additional services.
-
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Office Cleaning</h3>
+          <p>
+            Professional cleaning for offices and workspaces.
+          </p>
         </div>
+
+        <div class="service-card">
+          <div class="service-icon">🍳</div>
+          <h3>Kitchen Cleaning</h3>
+          <p>
+            Detailed cleaning of kitchen surfaces and areas.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚿</div>
+          <h3>Bathroom Cleaning</h3>
+          <p>
+            Deep cleaning for bathroom surfaces and fixtures.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛋️</div>
+          <h3>Sofa Cleaning</h3>
+          <p>
+            Professional sofa shampooing and cleaning.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛏️</div>
+          <h3>Mattress Cleaning</h3>
+          <p>
+            Deep cleaning for mattresses and soft surfaces.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🪟</div>
+          <h3>Window & Glass</h3>
+          <p>
+            Cleaning of accessible windows, glass and mirrors.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Floor Cleaning</h3>
+          <p>
+            Detailed floor cleaning and finishing.
+          </p>
+        </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+  <!-- =========================
+       PRICING
+  ========================== -->
 
-<section id="about">
+  <section class="pricing" id="pricing">
 
     <div class="container">
 
-        <div class="about-grid">
+      <div class="section-head">
 
-            <div class="about-box">
+        <div class="section-label">
+          Transparent Pricing
+        </div>
 
-                <small style="
-                    color:#087f79;
-                    font-weight:bold;
-                    text-transform:uppercase;
-                ">
-                    About Shreya Cleaning Services
-                </small>
+        <h2>
+          Home Deep Cleaning Packages
+        </h2>
 
-                <h2>
-                    Cleaning You Can Rely On.
-                </h2>
+        <p>
+          Clear pricing for empty and furnished homes.
+        </p>
 
-                <p>
-                    Shreya Cleaning Services provides professional
-                    cleaning solutions for homes, apartments,
-                    offices and commercial spaces across Mumbai.
-                </p>
+      </div>
 
-                <p>
-                    Our team focuses on detailed cleaning,
-                    professional equipment, proper handling of
-                    surfaces and convenient scheduling.
-                </p>
+      <div class="pricing-note">
+        Prices shown below are based on the existing Shreya Cleaning Services packages.
+      </div>
 
-                <p>
-                    Whether you are moving into a new home,
-                    preparing for an occasion or simply need a
-                    complete deep clean, we have a package to
-                    suit your requirement.
-                </p>
 
-            </div>
+      <div class="pricing-wrap">
 
+        <table class="pricing-table">
+
+          <thead>
+
+            <tr>
+              <th>Property</th>
+              <th>Empty Home</th>
+              <th>Furnished Home</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>1 RK</td>
+              <td><span class="price">₹2,500</span></td>
+              <td><span class="price">₹3,500</span></td>
+            </tr>
+
+            <tr>
+              <td>1 BHK</td>
+              <td><span class="price">₹3,000</span></td>
+              <td><span class="price">₹3,500</span></td>
+            </tr>
+
+            <tr>
+              <td>2 BHK</td>
+              <td><span class="price">₹3,500</span></td>
+              <td><span class="price">₹7,500</span></td>
+            </tr>
+
+            <tr>
+              <td>3 BHK</td>
+              <td><span class="price">₹5,500</span></td>
+              <td><span class="price">₹10,000</span></td>
+            </tr>
+
+            <tr>
+              <td>4 BHK</td>
+              <td><span class="price">₹7,000</span></td>
+              <td><span class="price">₹16,000</span></td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <div class="pricing-bottom">
+
+        <div>
+          <strong>Need help choosing your package?</strong>
+          <p>
+            Contact us and tell us your property type and requirements.
+          </p>
+        </div>
+
+        <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20a%20quote%20for%20home%20deep%20cleaning."
+           target="_blank"
+           class="btn btn-primary"
+           onclick="trackWhatsApp()">
+          Get a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       INCLUDED
+  ========================== -->
+
+  <section>
+
+    <div class="container included-grid">
+
+      <div class="included-image">
+
+        <img
+          src="images/deep-cleaning.jpg"
+          alt="Shreya Cleaning Services deep cleaning"
+          onerror="this.style.background='#e8f3ed'; this.removeAttribute('src');">
+
+      </div>
+
+
+      <div>
+
+        <div class="section-label">
+          What's Included
+        </div>
+
+        <h2>
+          More Attention to the Details
+        </h2>
+
+        <p>
+          Our deep cleaning packages cover the important
+          areas that make a visible difference to your home.
+        </p>
+
+
+        <div class="check-grid">
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Floor Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Kitchen Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Bathroom Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Wall Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Window Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Mirror Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Wardrobe Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Kitchen Trolley
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Sofa Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Mattress Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Bedroom Cleaning
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Other Accessible Areas
+          </div>
+
+        </div>
+
+
+        <div class="wall-note">
+
+          <strong>Wall Cleaning Included</strong>
+
+          <p>
+            Wall cleaning is part of the deep cleaning coverage,
+            helping us deliver a more complete overall finish.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROCESS
+  ========================== -->
+
+  <section class="process" id="process">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          How It Works
+        </div>
+
+        <h2>
+          Simple From Booking to Finish
+        </h2>
+
+        <p>
+          A straightforward process designed to make
+          your cleaning experience easier.
+        </p>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+          <span>STEP 01</span>
+          <h3>Contact Us</h3>
+          <p>
+            Call or WhatsApp us with your cleaning requirement.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span>STEP 02</span>
+          <h3>Choose Service</h3>
+          <p>
+            Select the appropriate cleaning package for your space.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span>STEP 03</span>
+          <h3>Cleaning Begins</h3>
+          <p>
+            Our team follows the required cleaning process.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span>STEP 04</span>
+          <h3>Final Finish</h3>
+          <p>
+            Final dry cleaning and finishing of the cleaned areas.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHY SHREYA
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Why Shreya Cleaning
+        </div>
+
+        <h2>
+          Cleaning With Attention to Detail
+        </h2>
+
+        <p>
+          Our website should clearly show customers
+          what they are paying for and what they can expect.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-card-number">01 / PROCESS</div>
+          <h3>3-Layer Cleaning</h3>
+          <p>
+            Dust, wet wipe, then dry and finish for
+            a more detailed cleaning process.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-number">02 / COVERAGE</div>
+          <h3>Detailed Areas</h3>
+          <p>
+            Important areas such as walls, floors,
+            bathrooms, kitchens, windows and more.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-number">03 / FLEXIBILITY</div>
+          <h3>Homes & Offices</h3>
+          <p>
+            Cleaning solutions for residential and
+            commercial spaces.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       GALLERY
+  ========================== -->
+
+  <section class="gallery">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Our Work
+        </div>
+
+        <h2>
+          See the Difference
+        </h2>
+
+        <p>
+          Add your real cleaning project photos here
+          to show customers the quality of your work.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+          <img
+            src="images/gallery-1.jpg"
+            alt="Shreya Cleaning Services project"
+            onerror="this.style.background='#dcebe3'; this.removeAttribute('src');">
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+            src="images/gallery-2.jpg"
+            alt="Home deep cleaning"
+            onerror="this.style.background='#dcebe3'; this.removeAttribute('src');">
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+            src="images/gallery-3.jpg"
+            alt="Kitchen cleaning"
+            onerror="this.style.background='#dcebe3'; this.removeAttribute('src');">
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+            src="images/gallery-4.jpg"
+            alt="Bathroom cleaning"
+            onerror="this.style.background='#dcebe3'; this.removeAttribute('src');">
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+            src="images/gallery-5.jpg"
+            alt="Professional cleaning service"
+            onerror="this.style.background='#dcebe3'; this.removeAttribute('src');">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       REVIEWS
+  ========================== -->
+
+  <section id="reviews">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Customer Feedback
+        </div>
+
+        <h2>
+          What Our Customers Say
+        </h2>
+
+        <p>
+          Replace the sample cards below with your actual
+          Google/customer reviews.
+        </p>
+
+      </div>
+
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “The cleaning was detailed and the team paid
+            attention to the important areas of the house.”
+          </p>
+
+          <div class="customer">
+            — Customer Review
+          </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “Good experience with the deep cleaning service.
+            The overall finish was neat.”
+          </p>
+
+          <div class="customer">
+            — Customer Review
+          </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “Professional cleaning service and easy
+            communication through WhatsApp.”
+          </p>
+
+          <div class="customer">
+            — Customer Review
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FAQ
+  ========================== -->
+
+  <section class="faq" id="faq">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          FAQ
+        </div>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <details>
+          <summary>
+            What is included in deep cleaning?
+          </summary>
+
+          <p>
+            Our deep cleaning coverage includes areas such
+            as floors, kitchen, bathrooms, windows, walls,
+            wardrobes, mirrors and other accessible areas
+            depending on the selected package.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            Do you clean walls?
+          </summary>
+
+          <p>
+            Yes. Wall cleaning is included in our deep
+            cleaning coverage.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            Do you provide sofa and mattress cleaning?
+          </summary>
+
+          <p>
+            Yes. Sofa and mattress cleaning services are
+            available as part of our cleaning services.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            Do you clean furnished homes?
+          </summary>
+
+          <p>
+            Yes. We provide separate furnished-home
+            deep cleaning pricing for 1 RK through 4 BHK.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            How can I book a cleaning service?
+          </summary>
+
+          <p>
+            You can call us or send your requirement on
+            WhatsApp. Our team can guide you regarding
+            the suitable service and pricing.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================== -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div>
+
+          <div class="section-label">
+            Ready for a Cleaner Space?
+          </div>
+
+          <h2>
+            Let's Make Your Space Feel Fresh Again.
+          </h2>
+
+          <p>
+            Tell us your property type and cleaning requirement.
+            We'll help you with the next step.
+          </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+          <a
+            href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20would%20like%20a%20cleaning%20quote."
+            target="_blank"
+            class="btn btn-primary"
+            onclick="trackWhatsApp()">
+            💬 WhatsApp
+          </a>
+
+          <a
+            href="tel:+918657550058"
+            class="btn btn-outline"
+            onclick="trackCall()">
+            📞 Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Contact Shreya
+        </div>
+
+        <h2>
+          Get in Touch
+        </h2>
+
+        <p>
+          Call or WhatsApp us for your cleaning requirement.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <h3>Contact Information</h3>
+
+
+          <div class="contact-row">
+
+            <div class="contact-icon">📞</div>
 
             <div>
-
-                <div class="section-heading"
-                     style="text-align:left;margin:0 0 25px 0;">
-
-                    <small>Why Customers Choose Us</small>
-
-                    <h2>
-                        Professional Service,
-                        Clear Pricing
-                    </h2>
-
-                    <p>
-                        We aim to make professional cleaning
-                        straightforward from quotation to completion.
-                    </p>
-
-                </div>
-
-
-                <div class="about-points">
-
-                    <div class="about-point">
-                        <strong>500+ Families</strong>
-                        <span>
-                            Serving customers across Mumbai.
-                        </span>
-                    </div>
-
-                    <div class="about-point">
-                        <strong>Trained Professionals</strong>
-                        <span>
-                            Cleaning handled by trained staff.
-                        </span>
-                    </div>
-
-                    <div class="about-point">
-                        <strong>Professional Equipment</strong>
-                        <span>
-                            Suitable equipment for different cleaning tasks.
-                        </span>
-                    </div>
-
-                    <div class="about-point">
-                        <strong>Flexible Scheduling</strong>
-                        <span>
-                            Schedule your service according to availability.
-                        </span>
-                    </div>
-
-                </div>
-
+              <strong>Phone</strong>
+              <span>
+                <a href="tel:+918657550058"
+                   onclick="trackCall()">
+                  8657550058
+                </a>
+                <br>
+                <a href="tel:+919321879581"
+                   onclick="trackCall()">
+                  9321879581
+                </a>
+              </span>
             </div>
 
-        </div>
-
-    </div>
-
-</section>
+          </div>
 
 
-<!-- =========================
-     WHY US
-========================= -->
+          <div class="contact-row">
 
-<section>
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <small>Our Promise</small>
-
-            <h2>
-                A Professional Cleaning Experience
-            </h2>
-
-        </div>
-
-
-        <div class="why-grid">
-
-            <div class="why-card">
-
-                <div class="icon">👨‍🔧</div>
-
-                <h3>
-                    Trained Team
-                </h3>
-
-                <p>
-                    Trained cleaning professionals for residential
-                    and commercial cleaning requirements.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <div class="icon">🧹</div>
-
-                <h3>
-                    Professional Equipment
-                </h3>
-
-                <p>
-                    Proper equipment used according to the
-                    cleaning requirement and surface.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <div class="icon">📅</div>
-
-                <h3>
-                    Flexible Scheduling
-                </h3>
-
-                <p>
-                    Book your cleaning service according to
-                    available dates and time slots.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <div class="icon">⭐</div>
-
-                <h3>
-                    Customer Focused
-                </h3>
-
-                <p>
-                    We focus on delivering a convenient,
-                    professional and reliable cleaning experience.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     COMMERCIAL
-========================= -->
-
-<section style="background:#f5faf9;">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <small>Commercial Cleaning</small>
-
-            <h2>
-                Professional Cleaning for Businesses
-            </h2>
-
-            <p>
-                Cleaning solutions for workplaces and commercial
-                properties that require regular or deep cleaning.
-            </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="service-icon">🏢</div>
-                <h3>Offices</h3>
-                <p>
-                    Office floors, washrooms, doors, windows,
-                    work areas and other accessible surfaces.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🏨</div>
-                <h3>Hotels</h3>
-                <p>
-                    Professional cleaning support for hotel
-                    and hospitality spaces.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🏥</div>
-                <h3>Clinics & Hospitals</h3>
-                <p>
-                    Cleaning services for suitable non-clinical
-                    areas and facilities.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">💇</div>
-                <h3>Salons & Spas</h3>
-                <p>
-                    Cleaning for floors, wash areas and
-                    accessible surfaces.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🍽️</div>
-                <h3>Restaurants & Cafés</h3>
-                <p>
-                    Cleaning support for suitable customer
-                    and operational areas.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🛍️</div>
-                <h3>Retail Spaces</h3>
-                <p>
-                    Professional cleaning for stores,
-                    showrooms and commercial spaces.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SERVICE AREA
-========================= -->
-
-<section class="area-section">
-
-    <div class="container">
-
-        <div class="area-grid">
+            <div class="contact-icon">📍</div>
 
             <div>
-
-                <small style="
-                    color:#66d6ce;
-                    font-weight:bold;
-                    letter-spacing:1px;
-                ">
-                    SERVICE AREA
-                </small>
-
-                <h2>
-                    Cleaning Services Across Mumbai
-                </h2>
-
-                <p>
-                    We provide residential and commercial cleaning
-                    services across Mumbai and nearby locations,
-                    subject to availability.
-                </p>
-
-
-                <div class="area-list">
-
-                    <div>✓ Kandivali</div>
-                    <div>✓ Borivali</div>
-                    <div>✓ Malad</div>
-                    <div>✓ Goregaon</div>
-                    <div>✓ Andheri</div>
-                    <div>✓ Jogeshwari</div>
-                    <div>✓ Thane</div>
-                    <div>✓ Mira Road</div>
-                    <div>✓ Virar</div>
-                    <div>✓ Powai</div>
-                    <div>✓ Ghatkopar</div>
-                    <div>✓ Mumbai Suburbs</div>
-
-                </div>
-
+              <strong>Address</strong>
+              <span>
+                Singh Estate Road No. 2,<br>
+                Thakur Village,<br>
+                Kandivali East,<br>
+                Mumbai 400101
+              </span>
             </div>
 
+          </div>
 
-            <div class="area-contact">
 
-                <h3>
-                    Need a Cleaning Quote?
-                </h3>
+          <div class="contact-row">
 
-                <p>
-                    Send us your home type, location and
-                    cleaning requirement on WhatsApp.
-                </p>
+            <div class="contact-icon">💬</div>
 
-                <div class="contact-number">
-                    +91 86575 50058
-                </div>
-
-                <a class="btn btn-primary"
-                   href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services,%20I%20want%20a%20cleaning%20quotation.">
-                    Get WhatsApp Quote
-                </a>
-
+            <div>
+              <strong>WhatsApp</strong>
+              <span>
+                Quick enquiries and booking assistance
+              </span>
             </div>
+
+          </div>
+
+
+          <div class="socials">
+
+            <a
+              href="https://www.instagram.com/shreyacleaningmumbai?igsi=MW16b3FpMnE3ZjZsNw=="
+              target="_blank">
+              Instagram
+            </a>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=61590583804701"
+              target="_blank">
+              Facebook
+            </a>
+
+          </div>
 
         </div>
 
+
+        <div class="contact-card">
+
+          <h3>Quick Enquiry</h3>
+
+          <p style="margin-bottom:20px;color:#68776f;font-size:14px;">
+            Send us your requirement on WhatsApp and our
+            team can help you with the next step.
+          </p>
+
+
+          <a
+            href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%0A%0AProperty%20Type%3A%0ARequired%20Service%3A%0ALocation%3A%0APreferred%20Date%3A%0A%0APlease%20share%20the%20details%20and%20quote."
+            target="_blank"
+            class="btn btn-primary"
+            style="width:100%;margin-bottom:12px;"
+            onclick="trackWhatsApp()">
+            💬 Send Enquiry on WhatsApp
+          </a>
+
+
+          <a
+            href="tel:+918657550058"
+            class="btn btn-outline"
+            style="width:100%;"
+            onclick="trackCall()">
+            📞 Call 8657550058
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
 
-</section>
+  </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-<section id="contact">
+  <footer>
 
     <div class="container">
 
-        <div class="section-heading">
-
-            <small>Contact Us</small>
-
-            <h2>
-                Book Your Cleaning Service
-            </h2>
-
-            <p>
-                Tell us what you need cleaned and our team
-                can help you with the next steps.
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-            <div class="contact-info">
-
-                <h2>
-                    Let's Get Your Space Clean
-                </h2>
-
-                <p>
-                    Contact Shreya Cleaning Services for
-                    residential and commercial cleaning
-                    requirements in Mumbai.
-                </p>
-
-
-                <div class="contact-item">
-
-                    <strong>Call Us</strong>
-
-                    <span>
-                        <a href="tel:+919321879581">
-                            +91 93218 79581
-                        </a>
-                    </span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>WhatsApp</strong>
-
-                    <span>
-                        <a href="https://wa.me/918657550058">
-                            +91 86575 50058
-                        </a>
-                    </span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Location</strong>
-
-                    <span>
-                        Singh Estate Road No. 2,<br>
-                        Thakur Village, Kandivali East,<br>
-                        Mumbai – 400101
-                    </span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Instagram</strong>
-
-                    <span>
-                        @shreyacleaningmumbai
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-form">
-
-                <form
-                    action="https://formsubmit.co/your-email@example.com"
-                    method="POST"
-                >
-
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New Cleaning Enquiry - Shreya Cleaning Services"
-                    >
-
-                    <input
-                        type="hidden"
-                        name="_captcha"
-                        value="false"
-                    >
-
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label>
-                                Name
-                            </label>
-
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label>
-                                Phone Number
-                            </label>
-
-                            <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Your Phone Number"
-                                required
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label>
-                                Home / Property Type
-                            </label>
-
-                            <select name="property">
-
-                                <option value="">
-                                    Select Property
-                                </option>
-
-                                <option>1RK</option>
-                                <option>1BHK</option>
-                                <option>2BHK</option>
-                                <option>3BHK</option>
-                                <option>4BHK</option>
-                                <option>Office</option>
-                                <option>Commercial Property</option>
-                                <option>Other</option>
-
-                            </select>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label>
-                                Service Required
-                            </label>
-
-                            <select name="service">
-
-                                <option value="">
-                                    Select Service
-                                </option>
-
-                                <option>Standard Deep Cleaning</option>
-                                <option>Luxury Deep Cleaning</option>
-                                <option>Empty Flat Deep Cleaning</option>
-                                <option>Bathroom Cleaning</option>
-                                <option>Kitchen Cleaning</option>
-                                <option>Sofa Cleaning</option>
-                                <option>Mattress Cleaning</option>
-                                <option>Commercial Cleaning</option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Location
-                        </label>
-
-                        <input
-                            type="text"
-                            name="location"
-                            placeholder="Enter your area in Mumbai"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>
-                            Message
-                        </label>
-
-                        <textarea
-                            name="message"
-                            placeholder="Tell us about your cleaning requirement..."
-                        ></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary"
-                        style="border:none;cursor:pointer;width:100%;"
-                    >
-                        Send Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="footer-grid">
-
+      <div class="footer-grid">
 
         <div>
 
-            <h3>
-                Shreya Cleaning Services
-            </h3>
+          <h3>
+            Shreya Cleaning Services
+          </h3>
 
-            <p>
-                Professional residential and commercial
-                cleaning services across Mumbai.
-            </p>
-
-            <br>
-
-            <p>
-                Trained Professionals • Professional Equipment
-                • Flexible Scheduling
-            </p>
+          <p>
+            Professional home and office cleaning services
+            with a detailed approach to deep cleaning.
+          </p>
 
         </div>
 
 
         <div>
 
-            <h3>
-                Quick Links
-            </h3>
+          <h3>Quick Links</h3>
 
-            <ul>
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-
-                <li>
-                    <a href="#packages">Packages</a>
-                </li>
-
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#process">Process</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
 
         </div>
 
 
         <div>
 
-            <h3>
-                Contact
-            </h3>
+          <h3>Contact</h3>
 
-            <ul>
+          <a href="tel:+918657550058">
+            8657550058
+          </a>
 
-                <li>
-                    +91 93218 79581
-                </li>
+          <a href="tel:+919321879581">
+            9321879581
+          </a>
 
-                <li>
-                    +91 86575 50058
-                </li>
-
-                <li>
-                    Mumbai, Maharashtra
-                </li>
-
-                <li>
-                    @shreyacleaningmumbai
-                </li>
-
-            </ul>
+          <a href="https://wa.me/918657550058"
+             target="_blank">
+            WhatsApp
+          </a>
 
         </div>
 
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Shreya Cleaning Services. All rights reserved.
+        </span>
+
+        <span>
+          Professional Cleaning Services • Mumbai
+        </span>
+
+      </div>
+
     </div>
 
-
-    <div class="footer-bottom">
-
-        © 2026 Shreya Cleaning Services.
-        All Rights Reserved.
-
-    </div>
-
-</footer>
+  </footer>
 
 
-<!-- =========================
-     FLOATING WHATSAPP
-========================= -->
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
 
-<a
-    class="whatsapp"
-    href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services,%20I%20want%20to%20book%20a%20cleaning%20service."
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20to%20know%20more%20about%20your%20cleaning%20services."
     target="_blank"
-    aria-label="Chat on WhatsApp"
->
-    ☎
-</a>
+    aria-label="WhatsApp Shreya Cleaning Services"
+    onclick="trackWhatsApp()">
+
+    💬
+
+  </a>
 
 
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+  <!-- =========================
+       TRACKING
+  ========================== -->
 
-<script>
+  <script>
 
-    // Smooth scrolling for navigation links
+    function trackWhatsApp() {
 
-    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      if (typeof gtag === "function") {
 
-        link.addEventListener('click', function(e) {
-
-            const target = document.querySelector(
-                this.getAttribute('href')
-            );
-
-            if (target) {
-
-                e.preventDefault();
-
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-            }
-
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18327483486',
+          'event_callback': function () {}
         });
 
-    });
-
-
-    // Contact form validation
-
-    const form = document.querySelector('form');
-
-    if (form) {
-
-        form.addEventListener('submit', function(e) {
-
-            const phone = form.querySelector(
-                'input[name="phone"]'
-            );
-
-            if (phone && phone.value.trim().length < 10) {
-
-                e.preventDefault();
-
-                alert(
-                    'Please enter a valid phone number.'
-                );
-
-            }
-
-        });
+      }
 
     }
 
-</script>
+
+    function trackCall() {
+
+      if (typeof gtag === "function") {
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18327483486',
+          'event_callback': function () {}
+        });
+
+      }
+
+    }
+
+  </script>
+
 
 </body>
 </html>
