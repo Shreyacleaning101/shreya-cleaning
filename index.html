@@ -8,7 +8,6 @@
   <meta name="keywords" content="deep cleaning Mumbai, home cleaning Mumbai, house cleaning Kandivali, empty flat cleaning, luxury deep cleaning, Shreya Cleaning Services">
   <meta name="author" content="Shreya Cleaning Services">
 
-  <!-- Google Ads / Google Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18327483486"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -48,411 +47,462 @@
     img, video { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
     button, a { -webkit-tap-highlight-color: transparent; }
+    button { font-family: inherit; border: none; background: none; cursor: pointer; }
 
     .container { width: min(1180px, 92%); margin: auto; }
 
     /* HEADER */
     header {
       position: sticky; top: 0; z-index: 1000;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255,255,255,0.97);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(220,235,227,0.85);
     }
     .nav {
-      min-height: 78px;
-      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      min-height: 72px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
     .logo { display: flex; align-items: center; gap: 12px; }
     .logo-mark {
-      width: 44px; height: 44px; border-radius: 13px;
+      width: 42px; height: 42px; border-radius: 12px;
       background: var(--green); color: white;
       display: flex; align-items: center; justify-content: center;
-      font-family: "Manrope", sans-serif; font-size: 20px; font-weight: 800;
+      font-family: "Manrope", sans-serif; font-size: 18px; font-weight: 800;
     }
     .logo-text strong {
       display: block; font-family: "Manrope", sans-serif;
-      font-size: 17px; color: var(--dark);
+      font-size: 16px; color: var(--dark);
     }
     .logo-text span {
       display: block; font-size: 11px; color: var(--green);
       font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
     }
-    nav { display: flex; align-items: center; gap: 26px; }
-    nav a { color: #405047; font-weight: 600; font-size: 14px; transition: .25s; }
+    nav { display: flex; align-items: center; gap: 22px; }
+    nav a { color: #405047; font-weight: 600; font-size: 14px; transition: .2s; }
     nav a:hover { color: var(--green); }
     .nav-call {
       background: var(--green); color: white !important;
-      padding: 11px 18px; border-radius: 100px;
+      padding: 10px 16px; border-radius: 100px; font-size: 13px;
     }
     .nav-call:hover { background: var(--dark-green); }
 
     /* HERO */
     .hero {
-      position: relative;
       background:
-        radial-gradient(circle at 85% 15%, rgba(183,227,107,.28), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(183,227,107,.25), transparent 30%),
         linear-gradient(135deg, #f3fbf6 0%, #ffffff 55%);
-      padding: 70px 0 80px; overflow: hidden;
+      padding: 56px 0 64px;
     }
     .hero-grid {
       display: grid; grid-template-columns: 1.05fr .95fr;
-      align-items: center; gap: 55px;
+      align-items: center; gap: 48px;
     }
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
       background: var(--light-green); color: var(--dark-green);
-      padding: 8px 14px; border-radius: 100px;
-      font-weight: 700; font-size: 13px; margin-bottom: 18px;
+      padding: 7px 14px; border-radius: 100px;
+      font-weight: 700; font-size: 13px; margin-bottom: 16px;
     }
     .eyebrow-dot {
       width: 8px; height: 8px; border-radius: 50%; background: var(--green);
     }
     h1 {
       font-family: "Manrope", sans-serif; color: var(--dark);
-      font-size: clamp(38px, 5vw, 62px); line-height: 1.05;
-      letter-spacing: -2px; margin-bottom: 20px;
+      font-size: clamp(34px, 5vw, 56px); line-height: 1.08;
+      letter-spacing: -1.5px; margin-bottom: 16px;
     }
     h1 span { color: var(--green); }
     .hero-text {
-      font-size: 17px; max-width: 540px; color: #596a61; margin-bottom: 28px;
+      font-size: 16px; max-width: 500px; color: #596a61; margin-bottom: 24px;
     }
-    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       padding: 14px 22px; border-radius: 100px; font-weight: 700; font-size: 15px;
-      transition: .25s; border: 1px solid transparent;
+      transition: .25s; border: 1px solid transparent; cursor: pointer;
     }
     .btn-primary {
       background: var(--green); color: white;
-      box-shadow: 0 12px 25px rgba(22,131,75,.22);
+      box-shadow: 0 10px 24px rgba(22,131,75,.22);
     }
-    .btn-primary:hover { background: var(--dark-green); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--dark-green); transform: translateY(-1px); }
     .btn-outline {
       border-color: var(--border); background: white; color: var(--dark);
     }
     .btn-outline:hover { border-color: var(--green); color: var(--green); }
     .hero-trust {
-      display: flex; flex-wrap: wrap; gap: 16px;
+      display: flex; flex-wrap: wrap; gap: 14px;
       font-size: 13px; font-weight: 600; color: #53645b;
     }
     .hero-trust span { display: flex; align-items: center; gap: 6px; }
     .hero-trust b { color: var(--green); }
 
     .hero-media { position: relative; }
-    .hero-media img, .hero-media video {
-      width: 100%; min-height: 420px; max-height: 520px;
-      object-fit: cover; border-radius: 28px;
+    .hero-media img {
+      width: 100%; min-height: 380px; max-height: 480px;
+      object-fit: cover; border-radius: 24px;
       box-shadow: var(--shadow); background: #e8f3ed;
     }
     .hero-card {
-      position: absolute; left: -18px; bottom: 24px;
-      background: white; padding: 16px 18px; border-radius: 16px;
-      box-shadow: 0 16px 40px rgba(0,0,0,.12);
+      position: absolute; left: -12px; bottom: 20px;
+      background: white; padding: 14px 16px; border-radius: 14px;
+      box-shadow: 0 14px 36px rgba(0,0,0,.12);
       display: flex; align-items: center; gap: 12px;
     }
     .hero-card-icon {
-      width: 42px; height: 42px; border-radius: 12px;
+      width: 40px; height: 40px; border-radius: 11px;
       background: var(--light-green); display: flex;
       align-items: center; justify-content: center;
-      color: var(--green); font-size: 18px;
+      color: var(--green); font-size: 16px;
     }
     .hero-card strong { display: block; color: var(--dark); font-size: 14px; }
     .hero-card span { font-size: 12px; color: #68776f; }
 
     /* SECTIONS */
-    section { padding: 85px 0; }
-    .section-head { max-width: 720px; margin: 0 auto 48px; text-align: center; }
+    section { padding: 72px 0; }
+    .section-head { max-width: 680px; margin: 0 auto 40px; text-align: center; }
     .section-label {
       color: var(--green); font-size: 12px; font-weight: 800;
-      text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: 10px;
+      text-transform: uppercase; letter-spacing: 1.3px; margin-bottom: 8px;
     }
     h2 {
       font-family: "Manrope", sans-serif;
-      font-size: clamp(28px, 4vw, 42px); line-height: 1.15;
-      letter-spacing: -1.2px; color: var(--dark); margin-bottom: 12px;
+      font-size: clamp(26px, 3.8vw, 38px); line-height: 1.15;
+      letter-spacing: -1px; color: var(--dark); margin-bottom: 10px;
     }
-    .section-head p { color: #63736a; font-size: 16px; }
+    .section-head p { color: #63736a; font-size: 15px; }
 
     /* 3 LAYERS */
     .layers { background: var(--light); }
-    .layer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .layer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .layer-card {
       background: white; border: 1px solid var(--border);
-      padding: 28px; border-radius: var(--radius); transition: .3s;
+      padding: 26px; border-radius: var(--radius); transition: .3s;
     }
-    .layer-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .layer-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
     .layer-number {
       font-family: "Manrope", sans-serif; color: #b7c9be;
-      font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 14px;
+      font-size: 36px; font-weight: 800; line-height: 1; margin-bottom: 12px;
     }
-    .layer-card h3 { color: var(--dark); font-size: 20px; margin-bottom: 8px; }
+    .layer-card h3 { color: var(--dark); font-size: 18px; margin-bottom: 6px; }
     .layer-card p { color: #68776f; font-size: 14px; }
 
-    /* SERVICES */
-    .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .service-card {
-      border: 1px solid var(--border); padding: 22px; border-radius: 18px;
-      background: white; transition: .3s;
-    }
-    .service-card:hover {
-      transform: translateY(-4px); box-shadow: var(--shadow); border-color: #b8dbc7;
-    }
-    .service-icon {
-      width: 46px; height: 46px; background: var(--light-green); color: var(--green);
-      border-radius: 13px; display: flex; align-items: center; justify-content: center;
-      font-size: 20px; margin-bottom: 14px;
-    }
-    .service-card h3 { color: var(--dark); font-size: 16px; margin-bottom: 6px; }
-    .service-card p { color: #718078; font-size: 13px; }
-
-    /* PACKAGES */
-    .packages { background: var(--light); }
-    .package-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    /* ========== URBAN COMPANY STYLE BOOKING ========== */
+    .book-section { background: var(--light); }
+    .book-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 28px;
       align-items: start;
     }
-    .package-card {
-      background: white; border: 1px solid var(--border);
-      border-radius: 24px; overflow: hidden; transition: .3s;
-      display: flex; flex-direction: column;
+
+    /* Left: service cards */
+    .svc-cards { display: flex; flex-direction: column; gap: 14px; }
+    .svc-card {
+      background: white;
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 20px 20px 18px;
+      cursor: pointer;
+      transition: .2s;
+      text-align: left;
+      width: 100%;
     }
-    .package-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
-    .package-card.featured {
-      border: 2px solid var(--green);
-      box-shadow: 0 16px 40px rgba(22,131,75,.12);
+    .svc-card:hover { border-color: #b8dbc7; box-shadow: 0 8px 24px rgba(15,66,42,.06); }
+    .svc-card.active {
+      border-color: var(--green);
+      background: #f4fbf7;
+      box-shadow: 0 8px 28px rgba(22,131,75,.12);
     }
-    .package-badge {
-      background: var(--green); color: white; font-size: 11px; font-weight: 800;
-      text-transform: uppercase; letter-spacing: 1.2px; text-align: center;
-      padding: 8px;
+    .svc-card-top {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
     }
-    .package-header { padding: 28px 24px 18px; text-align: center; }
-    .package-header .icon { font-size: 28px; margin-bottom: 10px; }
-    .package-header h3 {
-      font-family: "Manrope", sans-serif; color: var(--dark);
-      font-size: 20px; margin-bottom: 6px;
+    .svc-card-left { display: flex; gap: 14px; align-items: flex-start; }
+    .svc-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--light-green); color: var(--green);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; flex-shrink: 0;
     }
-    .package-header .tagline {
-      font-size: 13px; color: #68776f; margin-bottom: 14px;
+    .svc-card.active .svc-icon { background: var(--green); color: white; }
+    .svc-card h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 17px; color: var(--dark); margin-bottom: 2px;
     }
-    .package-price {
-      font-family: "Manrope", sans-serif; font-size: 32px; font-weight: 800;
-      color: var(--green); line-height: 1;
+    .svc-card .tag { font-size: 13px; color: #68776f; }
+    .svc-price-hint {
+      font-family: "Manrope", sans-serif;
+      font-size: 15px; font-weight: 800; color: var(--green);
+      white-space: nowrap;
     }
-    .package-price span { font-size: 14px; font-weight: 600; color: #68776f; }
-    .package-body { padding: 0 22px 22px; flex: 1; }
-    .package-body h4 {
-      font-size: 12px; text-transform: uppercase; letter-spacing: .8px;
-      color: var(--dark-green); margin-bottom: 12px; font-weight: 800;
+    .svc-includes {
+      margin-top: 14px; padding-top: 14px;
+      border-top: 1px solid #e8f0eb;
+      display: none;
+      flex-wrap: wrap; gap: 8px;
     }
-    .package-list {
-      list-style: none; display: flex; flex-direction: column; gap: 8px;
+    .svc-card.active .svc-includes { display: flex; }
+    .svc-includes span {
+      font-size: 12px; background: white; border: 1px solid var(--border);
+      padding: 5px 10px; border-radius: 100px; color: #4c5d54; font-weight: 600;
     }
-    .package-list li {
-      font-size: 13px; color: #4c5d54; display: flex; gap: 8px; align-items: flex-start;
-    }
-    .package-list li::before {
-      content: "✓"; color: var(--green); font-weight: 800; flex-shrink: 0;
-    }
-    .package-footer {
-      padding: 0 22px 24px; margin-top: auto;
-    }
-    .package-footer .btn { width: 100%; }
-    .package-note {
-      text-align: center; margin-top: 28px; font-size: 13px; color: #63736a;
-      max-width: 700px; margin-left: auto; margin-right: auto;
+    .svc-badge {
+      display: inline-block; background: var(--green); color: white;
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: .8px; padding: 3px 8px; border-radius: 6px;
+      margin-bottom: 6px;
     }
 
-    /* PRICING TABLES */
-    .price-table {
-      width: 100%; border-collapse: collapse; margin: 14px 0 18px;
-      font-size: 13px;
+    /* Right: sticky summary (Urban Company style) */
+    .book-summary {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      position: sticky;
+      top: 90px;
+      box-shadow: 0 12px 40px rgba(15,66,42,.08);
     }
-    .price-table th, .price-table td {
-      padding: 8px 10px; text-align: left; border-bottom: 1px solid #e8f0eb;
+    .book-summary h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 18px; color: var(--dark); margin-bottom: 18px;
     }
-    .price-table th {
-      background: var(--light-green); color: var(--dark-green);
-      font-weight: 700; font-size: 12px;
+    .size-label {
+      font-size: 12px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: .7px; color: var(--dark-green); margin-bottom: 10px;
     }
-    .price-table td:last-child {
-      font-family: "Manrope", sans-serif; font-weight: 800; color: var(--green);
-      text-align: right;
+    .size-pills {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px;
+    }
+    .size-pill {
+      padding: 10px 14px; border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: var(--light);
+      font-size: 13px; font-weight: 700; color: var(--dark);
+      transition: .2s; min-width: 64px; text-align: center;
+    }
+    .size-pill:hover { border-color: var(--green); }
+    .size-pill.active {
+      background: var(--green); color: white; border-color: var(--green);
+    }
+    .summary-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 0; border-bottom: 1px solid #eef4f0; font-size: 14px;
+    }
+    .summary-row:last-of-type { border-bottom: none; }
+    .summary-row .lab { color: #68776f; }
+    .summary-row .val { font-weight: 700; color: var(--dark); text-align: right; }
+    .summary-price {
+      margin: 18px 0 20px;
+      background: var(--light-green);
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .summary-price .lab { font-size: 13px; color: #4c5d54; font-weight: 600; }
+    .summary-price .amt {
+      font-family: "Manrope", sans-serif;
+      font-size: 28px; font-weight: 800; color: var(--green);
+    }
+    .book-wa-btn {
+      width: 100%; padding: 16px; font-size: 16px;
+      border-radius: 14px;
+    }
+    .book-note {
+      margin-top: 12px; font-size: 12px; color: #7a8a81; text-align: center; line-height: 1.45;
     }
 
-    /* WORK / VIDEOS */
-    .work-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    /* Mobile book bar */
+    .mobile-book-bar {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+      background: white; border-top: 1px solid var(--border);
+      padding: 12px 16px; box-shadow: 0 -8px 30px rgba(0,0,0,.08);
+      align-items: center; gap: 12px;
     }
+    .mobile-book-bar .mb-price {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px; font-weight: 800; color: var(--green);
+    }
+    .mobile-book-bar .mb-sub { font-size: 11px; color: #68776f; }
+    .mobile-book-bar .btn { flex: 1; padding: 14px; border-radius: 12px; }
+
+    /* SERVICES grid */
+    .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .service-card {
+      border: 1px solid var(--border); padding: 20px; border-radius: 16px;
+      background: white; transition: .25s;
+    }
+    .service-card:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow); border-color: #b8dbc7;
+    }
+    .service-icon {
+      width: 44px; height: 44px; background: var(--light-green); color: var(--green);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; margin-bottom: 12px;
+    }
+    .service-card h3 { color: var(--dark); font-size: 15px; margin-bottom: 4px; }
+    .service-card p { color: #718078; font-size: 13px; }
+
+    /* WORK */
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .work-card {
-      border-radius: 20px; overflow: hidden; background: #e8f3ed;
+      border-radius: 18px; overflow: hidden; background: #e8f3ed;
       border: 1px solid var(--border); aspect-ratio: 16/10;
     }
-    .work-card video, .work-card img {
-      width: 100%; height: 100%; object-fit: cover;
-    }
+    .work-card video { width: 100%; height: 100%; object-fit: cover; background: #0c5f36; }
 
-    /* HOW IT WORKS */
-    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    /* STEPS */
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
     .step-card {
-      text-align: center; padding: 24px 16px;
-      background: white; border: 1px solid var(--border); border-radius: 18px;
+      text-align: center; padding: 22px 14px;
+      background: white; border: 1px solid var(--border); border-radius: 16px;
     }
     .step-num {
-      width: 42px; height: 42px; margin: 0 auto 14px;
+      width: 40px; height: 40px; margin: 0 auto 12px;
       background: var(--light-green); color: var(--green);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-family: "Manrope", sans-serif; font-weight: 800; font-size: 16px;
+      font-family: "Manrope", sans-serif; font-weight: 800; font-size: 15px;
     }
-    .step-card h3 { color: var(--dark); font-size: 16px; margin-bottom: 6px; }
+    .step-card h3 { color: var(--dark); font-size: 15px; margin-bottom: 4px; }
     .step-card p { font-size: 13px; color: #68776f; }
 
-    /* WHY US */
-    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    /* WHY */
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .why-card {
       background: white; border: 1px solid var(--border);
-      padding: 28px; border-radius: var(--radius);
+      padding: 24px; border-radius: var(--radius);
     }
     .why-card .num {
       font-family: "Manrope", sans-serif; color: var(--green);
-      font-size: 14px; font-weight: 800; margin-bottom: 10px;
+      font-size: 13px; font-weight: 800; margin-bottom: 8px;
     }
-    .why-card h3 { color: var(--dark); font-size: 18px; margin-bottom: 8px; }
+    .why-card h3 { color: var(--dark); font-size: 17px; margin-bottom: 6px; }
     .why-card p { font-size: 14px; color: #68776f; }
 
-    /* IMPORTANT INFO */
+    /* INFO */
     .info-box {
-      background: var(--light-green); border-radius: 20px;
-      padding: 28px 32px; max-width: 900px; margin: 0 auto;
+      background: var(--light-green); border-radius: 18px;
+      padding: 24px 28px; max-width: 880px; margin: 0 auto;
     }
     .info-box h3 {
-      color: var(--dark); font-size: 18px; margin-bottom: 14px;
+      color: var(--dark); font-size: 17px; margin-bottom: 12px;
       font-family: "Manrope", sans-serif;
     }
-    .info-box ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .info-box ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
     .info-box li {
       font-size: 14px; color: #4c5d54; display: flex; gap: 10px; align-items: flex-start;
     }
     .info-box li::before { content: "•"; color: var(--green); font-weight: 800; }
 
     /* FAQ */
-    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-list { max-width: 720px; margin: 0 auto; }
     .faq-item {
-      border: 1px solid var(--border); border-radius: 14px;
-      margin-bottom: 12px; overflow: hidden; background: white;
+      background: white; border: 1px solid var(--border);
+      border-radius: 14px; margin-bottom: 10px; overflow: hidden;
     }
-    .faq-q {
-      width: 100%; text-align: left; padding: 18px 22px;
-      background: none; border: none; cursor: pointer;
-      font-family: "DM Sans", sans-serif; font-size: 15px; font-weight: 700;
-      color: var(--dark); display: flex; justify-content: space-between; align-items: center;
+    .faq-item summary {
+      padding: 16px 20px; cursor: pointer; font-weight: 700;
+      color: var(--dark); list-style: none; display: flex;
+      justify-content: space-between; align-items: center; font-size: 15px;
     }
-    .faq-q span { color: var(--green); font-size: 20px; transition: .25s; }
-    .faq-item.open .faq-q span { transform: rotate(45deg); }
-    .faq-a {
-      display: none; padding: 0 22px 18px; font-size: 14px; color: #63736a;
-    }
-    .faq-item.open .faq-a { display: block; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; font-size: 18px; color: var(--green); }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { padding: 0 20px 16px; font-size: 14px; color: #68776f; }
 
     /* CTA */
     .cta {
       background: linear-gradient(135deg, var(--dark-green), var(--green));
-      color: white; text-align: center; padding: 70px 0;
+      color: white; text-align: center; padding: 60px 0;
     }
-    .cta h2 { color: white; margin-bottom: 12px; }
-    .cta p { color: rgba(255,255,255,.85); margin-bottom: 28px; max-width: 520px; margin-left: auto; margin-right: auto; }
-    .cta .btn-primary {
-      background: white; color: var(--dark-green);
-      box-shadow: 0 12px 30px rgba(0,0,0,.15);
-    }
+    .cta h2 { color: white; margin-bottom: 10px; }
+    .cta p { color: rgba(255,255,255,.85); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta .btn-primary { background: white; color: var(--dark-green); box-shadow: none; }
     .cta .btn-primary:hover { background: var(--lime); }
-    .cta .btn-outline {
-      border-color: rgba(255,255,255,.4); color: white; background: transparent;
-    }
-    .cta .btn-outline:hover { background: rgba(255,255,255,.12); border-color: white; }
-    .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 
     /* CONTACT */
     .contact-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start;
     }
-    .contact-card {
-      background: var(--light); border-radius: 20px; padding: 28px;
+    .contact-info h3, .contact-grid h3 {
+      color: var(--dark); margin-bottom: 18px; font-family: "Manrope", sans-serif; font-size: 18px;
     }
     .contact-item {
-      display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start;
+      display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start;
     }
     .contact-item .icon {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--light-green); color: var(--green);
-      display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+      width: 40px; height: 40px; border-radius: 11px;
+      background: var(--light-green); display: flex;
+      align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0;
     }
-    .contact-item strong { display: block; color: var(--dark); font-size: 15px; }
-    .contact-item span, .contact-item a { font-size: 14px; color: #63736a; }
-    .contact-item a:hover { color: var(--green); }
+    .contact-item strong { display: block; color: var(--dark); font-size: 14px; }
+    .contact-item span, .contact-item a { font-size: 14px; color: #68776f; }
 
     /* FOOTER */
     footer {
       background: var(--dark); color: rgba(255,255,255,.7);
-      padding: 50px 0 30px; font-size: 14px;
+      padding: 44px 0 24px; font-size: 14px;
     }
     .footer-grid {
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px;
-      margin-bottom: 36px;
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; margin-bottom: 32px;
     }
     .footer-brand strong {
       display: block; color: white; font-family: "Manrope", sans-serif;
-      font-size: 18px; margin-bottom: 8px;
+      font-size: 17px; margin-bottom: 8px;
     }
-    .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 280px; }
+    .footer-brand p { max-width: 260px; line-height: 1.55; }
     .footer-links h4 {
-      color: white; font-size: 13px; text-transform: uppercase;
-      letter-spacing: 1px; margin-bottom: 14px;
+      color: white; font-size: 13px; margin-bottom: 12px;
+      font-family: "Manrope", sans-serif;
     }
     .footer-links a {
-      display: block; color: rgba(255,255,255,.65); margin-bottom: 8px;
-      font-size: 14px; transition: .2s;
+      display: block; margin-bottom: 7px; color: rgba(255,255,255,.65); transition: .2s;
     }
-    .footer-links a:hover { color: var(--lime); }
+    .footer-links a:hover { color: white; }
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,.1); padding-top: 22px;
-      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px; text-align: center; font-size: 13px;
     }
 
-    /* FLOATING WHATSAPP */
     .float-wa {
-      position: fixed; bottom: 24px; right: 24px; z-index: 999;
-      width: 58px; height: 58px; border-radius: 50%;
+      position: fixed; bottom: 88px; right: 20px; z-index: 999;
+      width: 54px; height: 54px; border-radius: 50%;
       background: #25D366; color: white;
       display: flex; align-items: center; justify-content: center;
-      font-size: 28px; box-shadow: 0 8px 24px rgba(37,211,102,.4);
-      transition: .25s;
+      font-size: 26px; box-shadow: 0 8px 22px rgba(37,211,102,.4);
+      transition: .2s;
     }
-    .float-wa:hover { transform: scale(1.08); }
+    .float-wa:hover { transform: scale(1.06); }
 
     /* RESPONSIVE */
     @media (max-width: 980px) {
-      .hero-grid, .contact-grid { grid-template-columns: 1fr; }
-      .package-grid, .layer-grid, .why-grid, .work-grid { grid-template-columns: 1fr 1fr; }
-      .service-grid, .steps-grid { grid-template-columns: 1fr 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      nav { display: none; }
-      .hero-card { left: 12px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-media { order: -1; }
+      .book-layout { grid-template-columns: 1fr; }
+      .book-summary { position: static; }
+      .layer-grid, .why-grid, .work-grid { grid-template-columns: 1fr 1fr; }
+      .service-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+      .mobile-book-bar { display: flex; }
+      .float-wa { bottom: 90px; }
+      body { padding-bottom: 76px; }
     }
     @media (max-width: 640px) {
-      .package-grid, .layer-grid, .why-grid, .work-grid,
-      .service-grid, .steps-grid, .footer-grid { grid-template-columns: 1fr; }
-      h1 { letter-spacing: -1.2px; }
-      section { padding: 60px 0; }
-      .hero { padding: 50px 0 60px; }
-      .hero-media img, .hero-media video { min-height: 280px; }
+      nav { display: none; }
+      .layer-grid, .why-grid, .work-grid,
+      .service-grid, .steps-grid { grid-template-columns: 1fr; }
+      .hero-media img { min-height: 260px; }
+      section { padding: 52px 0; }
+      .hero-card { left: 10px; right: 10px; bottom: 12px; }
+      .svc-card-top { flex-direction: column; }
+      .svc-price-hint { margin-top: 4px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="container nav">
       <a href="#" class="logo">
@@ -463,7 +513,7 @@
         </div>
       </a>
       <nav>
-        <a href="#packages">Packages</a>
+        <a href="#packages">Book Service</a>
         <a href="#services">Services</a>
         <a href="#work">Our Work</a>
         <a href="#how">How It Works</a>
@@ -473,7 +523,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -481,35 +530,23 @@
           <span class="eyebrow-dot"></span>
           Professional Cleaning Services in Mumbai
         </div>
-        <h1>
-          A Deeper Clean.<br>
-          <span>A Better Finish.</span>
-        </h1>
+        <h1>A Deeper Clean.<br><span>A Better Finish.</span></h1>
         <p class="hero-text">
-          Choose from Standard, Luxury or Empty Flat deep cleaning packages.
-          Trained team, transparent pricing and thorough results for homes across Mumbai.
+          Choose Standard, Luxury or Empty Flat. See the price instantly.
+          Book on WhatsApp in seconds.
         </p>
         <div class="hero-buttons">
-          <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20a%20quote%20for%20home%20deep%20cleaning."
-             class="btn btn-primary" target="_blank" rel="noopener"
-             onclick="gtag('event','whatsapp_click',{event_category:'contact'});">
-            💬 WhatsApp Quote
-          </a>
-          <a href="tel:+919321879581" class="btn btn-outline"
-             onclick="gtag('event','call_click',{event_category:'contact'});">
-            📞 Call +91 93218 79581
-          </a>
+          <a href="#packages" class="btn btn-primary">Select Service & Price</a>
+          <a href="tel:+919321879581" class="btn btn-outline">📞 Call +91 93218 79581</a>
         </div>
         <div class="hero-trust">
-          <span><b>✓</b> Standard · Luxury · Empty Flat</span>
-          <span><b>✓</b> Trained Team</span>
-          <span><b>✓</b> Mumbai Wide</span>
+          <span><b>✓</b> Transparent pricing</span>
+          <span><b>✓</b> Trained team</span>
+          <span><b>✓</b> Mumbai wide</span>
         </div>
       </div>
-
       <div class="hero-media">
-        <img src="hero-image.jpg" alt="Shreya Cleaning Services – professional deep cleaning in Mumbai"
-             onerror="this.src='IMG-20260807-WA0000.jpg'; this.onerror=null;">
+        <img src="hero-image.jpg" alt="Shreya Cleaning Services" loading="eager">
         <div class="hero-card">
           <div class="hero-card-icon">✓</div>
           <div>
@@ -521,8 +558,7 @@
     </div>
   </section>
 
-  <!-- 3 LAYERS -->
-  <section class="layers" id="method">
+  <section class="layers">
     <div class="container">
       <div class="section-head">
         <div class="section-label">Our Cleaning Method</div>
@@ -542,146 +578,143 @@
         </div>
         <div class="layer-card">
           <div class="layer-number">03</div>
-          <h3>Dry &amp; Finish</h3>
+          <h3>Dry & Finish</h3>
           <p>Final dry cleaning and finishing to leave the space clean, neat and fresh.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PACKAGES -->
-  <section class="packages" id="packages">
+  <!-- ========== URBAN COMPANY STYLE BOOKING ========== -->
+  <section class="book-section" id="packages">
     <div class="container">
       <div class="section-head">
-        <div class="section-label">Home Deep Cleaning Packages</div>
-        <h2>Choose the Right Package for Your Home</h2>
-        <p>Clear packages based on your home’s condition and cleaning requirements.</p>
+        <div class="section-label">Book Your Cleaning</div>
+        <h2>Choose service · See price · Send on WhatsApp</h2>
+        <p>Tap a package, pick your home size, check the price — then enquire in one click.</p>
       </div>
 
-      <div class="package-grid">
+      <div class="book-layout">
 
-        <!-- STANDARD -->
-        <div class="package-card">
-          <div class="package-header">
-            <div class="icon">🟢</div>
-            <h3>Standard Deep Cleaning</h3>
-            <p class="tagline">Surface &amp; Exterior-Focused</p>
-            <div class="package-price">₹3,499 <span>onwards</span></div>
-          </div>
-          <div class="package-body">
-            <table class="price-table">
-              <thead><tr><th>Home Size</th><th>Price</th></tr></thead>
-              <tbody>
-                <tr><td>1 RK</td><td>₹3,499</td></tr>
-                <tr><td>1 BHK</td><td>₹3,999</td></tr>
-                <tr><td>2 BHK</td><td>₹5,499</td></tr>
-                <tr><td>3 BHK</td><td>₹6,999</td></tr>
-                <tr><td>4 BHK</td><td>₹9,499</td></tr>
-              </tbody>
-            </table>
-            <h4>What’s Included</h4>
-            <ul class="package-list">
-              <li>Floor vacuuming, scrubbing &amp; mopping</li>
-              <li>Bathroom deep cleaning</li>
-              <li>Kitchen exterior, platform &amp; backsplash</li>
-              <li>Exterior cupboard, wardrobe &amp; cabinet cleaning</li>
-              <li>Doors, windows &amp; frames</li>
-              <li>Balcony, ceiling fans &amp; switch boards</li>
-              <li>General dusting &amp; cobweb removal</li>
-              <li>Accessible surfaces + final floor clean</li>
-            </ul>
-          </div>
-          <div class="package-footer">
-            <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%2C%20I%20want%20Standard%20Deep%20Cleaning%20quote."
-               class="btn btn-outline" target="_blank" rel="noopener">Get Quote</a>
-          </div>
+        <!-- LEFT: Service cards -->
+        <div class="svc-cards" id="svcCards">
+
+          <button type="button" class="svc-card" data-pkg="standard" onclick="pickService('standard')">
+            <div class="svc-card-top">
+              <div class="svc-card-left">
+                <div class="svc-icon">🟢</div>
+                <div>
+                  <h3>Standard Deep Cleaning</h3>
+                  <div class="tag">Surface & exterior focused</div>
+                </div>
+              </div>
+              <div class="svc-price-hint">From ₹3,499</div>
+            </div>
+            <div class="svc-includes">
+              <span>Floor scrub & mop</span>
+              <span>Bathroom deep clean</span>
+              <span>Kitchen exterior</span>
+              <span>Windows & doors</span>
+              <span>Fans & switch boards</span>
+              <span>Cobweb removal</span>
+            </div>
+          </button>
+
+          <button type="button" class="svc-card active" data-pkg="luxury" onclick="pickService('luxury')">
+            <div class="svc-card-top">
+              <div class="svc-card-left">
+                <div class="svc-icon">✨</div>
+                <div>
+                  <div class="svc-badge">Most Popular</div>
+                  <h3>Luxury Deep Cleaning</h3>
+                  <div class="tag">Complete interior + exterior</div>
+                </div>
+              </div>
+              <div class="svc-price-hint">From ₹3,999</div>
+            </div>
+            <div class="svc-includes">
+              <span>Everything in Standard</span>
+              <span>Interior cupboards</span>
+              <span>Kitchen trolley</span>
+              <span>Wall spot cleaning</span>
+              <span>Sofa surface</span>
+              <span>Mattress surface</span>
+              <span>Detailed finishing</span>
+            </div>
+          </button>
+
+          <button type="button" class="svc-card" data-pkg="empty" onclick="pickService('empty')">
+            <div class="svc-card-top">
+              <div class="svc-card-left">
+                <div class="svc-icon">🏠</div>
+                <div>
+                  <h3>Empty Flat Deep Cleaning</h3>
+                  <div class="tag">Ideal for move-in / move-out</div>
+                </div>
+              </div>
+              <div class="svc-price-hint">From ₹2,999</div>
+            </div>
+            <div class="svc-includes">
+              <span>Full floor clean</span>
+              <span>Bathroom & kitchen</span>
+              <span>Empty cupboards</span>
+              <span>Wall washing</span>
+              <span>Windows & balcony</span>
+              <span>Dust & final finish</span>
+            </div>
+          </button>
+
         </div>
 
-        <!-- LUXURY (featured) -->
-        <div class="package-card featured">
-          <div class="package-badge">Most Detailed</div>
-          <div class="package-header">
-            <div class="icon">✨</div>
-            <h3>Luxury Deep Cleaning</h3>
-            <p class="tagline">Complete Interior + Exterior</p>
-            <div class="package-price">₹3,999 <span>onwards</span></div>
-          </div>
-          <div class="package-body">
-            <table class="price-table">
-              <thead><tr><th>Home Size</th><th>Price</th></tr></thead>
-              <tbody>
-                <tr><td>1 RK</td><td>₹3,999</td></tr>
-                <tr><td>1 BHK</td><td>₹4,999</td></tr>
-                <tr><td>2 BHK</td><td>₹6,999</td></tr>
-                <tr><td>3 BHK</td><td>₹8,999</td></tr>
-                <tr><td>4 BHK</td><td>₹12,499</td></tr>
-              </tbody>
-            </table>
-            <h4>Everything in Standard +</h4>
-            <ul class="package-list">
-              <li>Interior &amp; exterior wardrobe, cupboard &amp; kitchen cabinets</li>
-              <li>Drawer &amp; storage-area cleaning</li>
-              <li>Cabinet shelf cleaning</li>
-              <li>Wall washing / wall spot cleaning</li>
-              <li>Detailed kitchen degreasing</li>
-              <li>Detailed bathroom &amp; window cleaning</li>
-              <li>Skirting, ceiling &amp; corner dust removal</li>
-              <li>Hard-to-reach areas + final inspection</li>
-            </ul>
-          </div>
-          <div class="package-footer">
-            <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%2C%20I%20want%20Luxury%20Deep%20Cleaning%20quote."
-               class="btn btn-primary" target="_blank" rel="noopener">Get Quote</a>
-          </div>
-        </div>
+        <!-- RIGHT: Sticky summary -->
+        <div class="book-summary">
+          <h3>Your selection</h3>
 
-        <!-- EMPTY FLAT -->
-        <div class="package-card">
-          <div class="package-header">
-            <div class="icon">🏠</div>
-            <h3>Empty Flat Deep Cleaning</h3>
-            <p class="tagline">Vacant &amp; Unfurnished Homes</p>
-            <div class="package-price">₹2,999 <span>onwards</span></div>
+          <div class="size-label">Home size</div>
+          <div class="size-pills" id="sizePills">
+            <button type="button" class="size-pill" data-size="1rk" onclick="pickSize('1rk')">1 RK</button>
+            <button type="button" class="size-pill active" data-size="1bhk" onclick="pickSize('1bhk')">1 BHK</button>
+            <button type="button" class="size-pill" data-size="2bhk" onclick="pickSize('2bhk')">2 BHK</button>
+            <button type="button" class="size-pill" data-size="3bhk" onclick="pickSize('3bhk')">3 BHK</button>
+            <button type="button" class="size-pill" data-size="4bhk" onclick="pickSize('4bhk')">4 BHK</button>
           </div>
-          <div class="package-body">
-            <table class="price-table">
-              <thead><tr><th>Home Size</th><th>Price</th></tr></thead>
-              <tbody>
-                <tr><td>1 RK</td><td>₹2,999</td></tr>
-                <tr><td>1 BHK</td><td>₹3,499</td></tr>
-                <tr><td>2 BHK</td><td>₹4,499</td></tr>
-                <tr><td>3 BHK</td><td>₹5,999</td></tr>
-                <tr><td>4 BHK</td><td>₹7,499</td></tr>
-              </tbody>
-            </table>
-            <h4>What’s Included</h4>
-            <ul class="package-list">
-              <li>Complete floor vacuuming, scrubbing &amp; mopping</li>
-              <li>Bathroom &amp; kitchen deep cleaning</li>
-              <li>Interior &amp; exterior empty cupboard / wardrobe cleaning</li>
-              <li>Kitchen cabinet &amp; empty drawer cleaning</li>
-              <li>Wall washing / spot cleaning</li>
-              <li>Doors, windows, balcony, fans &amp; switch boards</li>
-              <li>Skirting, cobwebs, ceiling &amp; corner dust</li>
-              <li>Removal of accumulated dust + final finish</li>
-            </ul>
+
+          <div class="summary-row">
+            <span class="lab">Service</span>
+            <span class="val" id="sumService">Luxury Deep Cleaning</span>
           </div>
-          <div class="package-footer">
-            <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%2C%20I%20want%20Empty%20Flat%20Deep%20Cleaning%20quote."
-               class="btn btn-outline" target="_blank" rel="noopener">Get Quote</a>
+          <div class="summary-row">
+            <span class="lab">Home size</span>
+            <span class="val" id="sumSize">1 BHK</span>
           </div>
+
+          <div class="summary-price">
+            <div class="lab">Estimated price</div>
+            <div class="amt" id="sumPrice">₹4,999</div>
+          </div>
+
+          <button type="button" class="btn btn-primary book-wa-btn" onclick="sendWhatsApp()">
+            💬 Send enquiry on WhatsApp
+          </button>
+          <p class="book-note">
+            Final price may vary with property condition & accessibility.
+            Sofa, mattress & carpet available as add-ons.
+          </p>
         </div>
 
       </div>
-
-      <p class="package-note">
-        Prices are based on standard size and condition. Final pricing may vary with property condition, dirt level and accessibility.
-        Heavy stains, paint marks or cement deposits may attract extra charges. Sofa, mattress &amp; carpet cleaning available as add-ons.
-      </p>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- Mobile sticky book bar -->
+  <div class="mobile-book-bar" id="mobileBar">
+    <div>
+      <div class="mb-price" id="mbPrice">₹4,999</div>
+      <div class="mb-sub" id="mbSub">Luxury · 1 BHK</div>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="sendWhatsApp()">WhatsApp</button>
+  </div>
+
   <section id="services">
     <div class="container">
       <div class="section-head">
@@ -722,7 +755,7 @@
         </div>
         <div class="service-card">
           <div class="service-icon">🪟</div>
-          <h3>Window &amp; Glass</h3>
+          <h3>Window & Glass</h3>
           <p>Accessible windows, glass and mirrors.</p>
         </div>
         <div class="service-card">
@@ -734,7 +767,6 @@
     </div>
   </section>
 
-  <!-- OUR WORK / VIDEOS -->
   <section id="work" style="background: var(--light);">
     <div class="container">
       <div class="section-head">
@@ -746,26 +778,22 @@
         <div class="work-card">
           <video controls playsinline preload="metadata" poster="hero-image.jpg">
             <source src="VID_20260812_132413_700_bsl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="work-card">
           <video controls playsinline preload="metadata" poster="hero-image.jpg">
             <source src="VID_20260813_101012_209_bsl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="work-card">
           <video controls playsinline preload="metadata" poster="hero-image.jpg">
             <source src="VID_20260813_101300_381_bsl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section id="how">
     <div class="container">
       <div class="section-head">
@@ -776,29 +804,28 @@
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-num">1</div>
-          <h3>Contact Us</h3>
-          <p>Call or WhatsApp us with your cleaning requirement.</p>
+          <h3>Choose Service</h3>
+          <p>Pick Standard, Luxury or Empty Flat and your home size.</p>
         </div>
         <div class="step-card">
           <div class="step-num">2</div>
-          <h3>Choose Package</h3>
-          <p>Select Standard, Luxury or Empty Flat based on your needs.</p>
+          <h3>Check Price</h3>
+          <p>See estimated price instantly before you enquire.</p>
         </div>
         <div class="step-card">
           <div class="step-num">3</div>
-          <h3>Cleaning Begins</h3>
-          <p>Our trained team follows the detailed cleaning process.</p>
+          <h3>WhatsApp Us</h3>
+          <p>Send enquiry in one click — we confirm slot & details.</p>
         </div>
         <div class="step-card">
           <div class="step-num">4</div>
-          <h3>Final Finish</h3>
-          <p>Final dry cleaning and finishing of the cleaned areas.</p>
+          <h3>We Clean</h3>
+          <p>Trained team follows the 3-layer process and finishes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
   <section style="background: var(--light);">
     <div class="container">
       <div class="section-head">
@@ -813,9 +840,9 @@
           <p>Dust, wet wipe, then dry and finish for a more detailed cleaning process.</p>
         </div>
         <div class="why-card">
-          <div class="num">02 / COVERAGE</div>
-          <h3>Clear Packages</h3>
-          <p>Standard, Luxury and Empty Flat options so you know exactly what you’re paying for.</p>
+          <div class="num">02 / PRICING</div>
+          <h3>See Price First</h3>
+          <p>Clear packages and live price so you know what you’re paying before you enquire.</p>
         </div>
         <div class="why-card">
           <div class="num">03 / TEAM</div>
@@ -826,15 +853,14 @@
     </div>
   </section>
 
-  <!-- IMPORTANT INFO -->
   <section>
     <div class="container">
       <div class="info-box">
         <h3>📌 Important Information</h3>
         <ul>
-          <li>Prices are based on the standard size and condition of the property.</li>
-          <li>Final pricing may vary depending on the property’s condition, level of dirt and accessibility.</li>
-          <li>Heavy stains, paint marks, cement deposits and specialised cleaning may attract additional charges.</li>
+          <li>Prices are based on standard size and condition of the property.</li>
+          <li>Final pricing may vary with property condition, dirt level and accessibility.</li>
+          <li>Heavy stains, paint marks or cement deposits may attract extra charges.</li>
           <li>Sofa, mattress, carpet and other specialised services are available as add-ons.</li>
           <li>Cleaning is performed on accessible areas only.</li>
         </ul>
@@ -842,7 +868,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq" style="background: var(--light);">
     <div class="container">
       <div class="section-head">
@@ -850,84 +875,44 @@
         <h2>Frequently Asked Questions</h2>
       </div>
       <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-            What is the difference between Standard and Luxury?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Standard focuses on floors, bathrooms, kitchen exteriors and exterior of furniture/storage.
-            Luxury includes everything in Standard plus interior of wardrobes, cupboards and cabinets,
-            wall cleaning, detailed degreasing and more thorough finishing.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-            When should I choose Empty Flat cleaning?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Empty Flat Deep Cleaning is ideal for vacant or unfurnished properties — new homes,
-            possession cleaning, rental turnovers, resale properties or before shifting in.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-            Do you clean walls?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Yes. Wall washing / wall spot cleaning is included in Luxury and Empty Flat packages.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-            Do you provide sofa and mattress cleaning?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Yes. Sofa, mattress and carpet cleaning are available as add-on services.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-            How can I book a cleaning service?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Call us on +91 93218 79581 or WhatsApp +91 86575 50058. Tell us your property type
-            and preferred package — we’ll confirm pricing and schedule.
-          </div>
-        </div>
+        <details class="faq-item">
+          <summary>What is included in deep cleaning?</summary>
+          <p>Coverage depends on the package: floors, kitchen, bathrooms, windows, walls, wardrobes and other accessible areas. Open a package card above to see what’s included.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you clean walls?</summary>
+          <p>Yes. Wall cleaning / spot cleaning is included in Luxury and Empty Flat packages.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you provide sofa and mattress cleaning?</summary>
+          <p>Yes. Sofa, mattress and carpet cleaning are available as add-on services.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I book?</summary>
+          <p>Select a service and home size in the booking section, check the estimated price, then tap “Send enquiry on WhatsApp”. Or call +91 93218 79581.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta">
     <div class="container">
       <h2>Ready for a Cleaner Space?</h2>
-      <p>Tell us your property type and cleaning requirement. We’ll help you choose the right package.</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%0A%0AProperty%20Type%3A%0APackage%3A%20Standard%20%2F%20Luxury%20%2F%20Empty%20Flat%0ALocation%3A%0APreferred%20Date%3A%0A%0APlease%20share%20quote."
-           class="btn btn-primary" target="_blank" rel="noopener">
-          💬 WhatsApp Us
-        </a>
-        <a href="tel:+919321879581" class="btn btn-outline">📞 Call 93218 79581</a>
-      </div>
+      <p>Pick your package, see the price, and send an enquiry on WhatsApp in under a minute.</p>
+      <a href="#packages" class="btn btn-primary">Select Service & Price</a>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
-    <div class="container contact-grid">
-      <div>
+    <div class="container">
+      <div class="section-head">
         <div class="section-label">Contact Shreya</div>
         <h2>Get in Touch</h2>
-        <p style="color:#63736a; margin-bottom: 24px;">
-          Call or WhatsApp us for your cleaning requirement. We serve homes across Mumbai.
-        </p>
-        <div class="contact-card">
+        <p>Call or WhatsApp us. We serve homes across Mumbai.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
           <div class="contact-item">
             <div class="icon">📞</div>
             <div>
@@ -946,22 +931,20 @@
             <div class="icon">📍</div>
             <div>
               <strong>Address</strong>
-              <span>Singh Estate Road No. 2, Thakur Village,<br>Kandivali East, Mumbai 400101</span>
+              <span>Singh Estate Road No. 2, Thakur Village, Kandivali East, Mumbai 400101</span>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="contact-card" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
-          <h3 style="color: var(--dark); margin-bottom: 10px; font-family: Manrope, sans-serif;">Quick Enquiry</h3>
-          <p style="font-size: 14px; color: #63736a; margin-bottom: 20px;">
-            Send us your requirement on WhatsApp and our team will help with the next step.
+        <div>
+          <h3>Quick Enquiry</h3>
+          <p style="font-size:14px;color:#68776f;margin-bottom:18px;">
+            Prefer a free-form message? Click below.
           </p>
-          <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20to%20know%20more%20about%20your%20cleaning%20services."
-             class="btn btn-primary" target="_blank" rel="noopener" style="width: 100%;">
+          <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%0A%0AProperty%20Type%3A%0ARequired%20Service%3A%0ALocation%3A%0APreferred%20Date%3A%0A%0APlease%20share%20the%20details%20and%20quote."
+             class="btn btn-primary" target="_blank" rel="noopener" style="width:100%;border-radius:14px;">
             💬 Send Enquiry on WhatsApp
           </a>
-          <a href="tel:+919321879581" class="btn btn-outline" style="width: 100%; margin-top: 10px;">
+          <a href="tel:+919321879581" class="btn btn-outline" style="width:100%;margin-top:10px;border-radius:14px;">
             📞 Call 93218 79581
           </a>
         </div>
@@ -969,41 +952,113 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <strong>Shreya Cleaning Services</strong>
-          <p>Professional deep cleaning for homes in Mumbai. Standard, Luxury &amp; Empty Flat packages with a trained team and clear pricing.</p>
+          <p>Professional deep cleaning for homes in Mumbai. Standard, Luxury & Empty Flat packages with clear pricing.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
-          <a href="#packages">Packages</a>
+          <a href="#packages">Book Service</a>
           <a href="#services">Services</a>
           <a href="#work">Our Work</a>
           <a href="#faq">FAQ</a>
         </div>
         <div class="footer-links">
           <h4>Contact</h4>
-          <a href="tel:+919321879581">📞 +91 93218 79581</a>
-          <a href="https://wa.me/918657550058" target="_blank" rel="noopener">💬 +91 86575 50058</a>
-          <a href="#contact">📍 Kandivali East, Mumbai</a>
+          <a href="tel:+919321879581">+91 93218 79581</a>
+          <a href="https://wa.me/918657550058" target="_blank" rel="noopener">WhatsApp +91 86575 50058</a>
+          <a href="#contact">Kandivali East, Mumbai</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Shreya Cleaning Services. All rights reserved.</span>
-        <span>Professional Cleaning. Trained Team. Better Results.</span>
+        © 2025–2026 Shreya Cleaning Services. All rights reserved.
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20a%20quote."
-     class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp"
-     onclick="gtag('event','whatsapp_float',{event_category:'contact'});">
-    💬
-  </a>
+  <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20to%20know%20more%20about%20your%20cleaning%20services."
+     class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 
+  <script>
+    const prices = {
+      standard: { '1rk': 3499, '1bhk': 3999, '2bhk': 5499, '3bhk': 6999, '4bhk': 9499 },
+      luxury:   { '1rk': 3999, '1bhk': 4999, '2bhk': 7499, '3bhk': 9999, '4bhk': 14999 },
+      empty:    { '1rk': 2999, '1bhk': 3499, '2bhk': 4999, '3bhk': 6499, '4bhk': 8999 }
+    };
+
+    const packageNames = {
+      standard: 'Standard Deep Cleaning',
+      luxury: 'Luxury Deep Cleaning',
+      empty: 'Empty Flat Deep Cleaning'
+    };
+
+    const sizeNames = {
+      '1rk': '1 RK', '1bhk': '1 BHK', '2bhk': '2 BHK', '3bhk': '3 BHK', '4bhk': '4 BHK'
+    };
+
+    let currentPkg = 'luxury';
+    let currentSize = '1bhk';
+
+    function formatPrice(n) {
+      return '₹' + n.toLocaleString('en-IN');
+    }
+
+    function refreshUI() {
+      const price = prices[currentPkg][currentSize];
+
+      // Service cards
+      document.querySelectorAll('.svc-card').forEach(function(card) {
+        card.classList.toggle('active', card.dataset.pkg === currentPkg);
+      });
+
+      // Size pills
+      document.querySelectorAll('.size-pill').forEach(function(pill) {
+        pill.classList.toggle('active', pill.dataset.size === currentSize);
+      });
+
+      // Summary
+      document.getElementById('sumService').textContent = packageNames[currentPkg];
+      document.getElementById('sumSize').textContent = sizeNames[currentSize];
+      document.getElementById('sumPrice').textContent = formatPrice(price);
+
+      // Mobile bar
+      document.getElementById('mbPrice').textContent = formatPrice(price);
+      document.getElementById('mbSub').textContent = packageNames[currentPkg].replace(' Deep Cleaning', '') + ' · ' + sizeNames[currentSize];
+    }
+
+    function pickService(pkg) {
+      currentPkg = pkg;
+      refreshUI();
+    }
+
+    function pickSize(size) {
+      currentSize = size;
+      refreshUI();
+    }
+
+    function sendWhatsApp() {
+      const price = prices[currentPkg][currentSize];
+      const message =
+        'Hello Shreya Cleaning Services,%0A%0A' +
+        'I want to book the following:%0A%0A' +
+        '📦 Service: ' + packageNames[currentPkg] + '%0A' +
+        '🏠 Home size: ' + sizeNames[currentSize] + '%0A' +
+        '💰 Estimated price: ' + formatPrice(price) + '%0A%0A' +
+        'Please confirm availability and next steps.';
+      window.open('https://wa.me/918657550058?text=' + message, '_blank');
+    }
+
+    refreshUI();
+
+    document.querySelectorAll('video').forEach(function(v) {
+      v.addEventListener('error', function() {
+        console.warn('Video failed:', v.currentSrc);
+      });
+      v.load();
+    });
+  </script>
 </body>
 </html>
