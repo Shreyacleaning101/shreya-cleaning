@@ -236,11 +236,6 @@
       font-size: 17px; color: var(--dark); margin-bottom: 2px;
     }
     .svc-card .tag { font-size: 13px; color: #68776f; }
-    .svc-price-hint {
-      font-family: "Manrope", sans-serif;
-      font-size: 15px; font-weight: 800; color: var(--green);
-      white-space: nowrap;
-    }
     .svc-includes {
       margin-top: 14px; padding-top: 14px;
       border-top: 1px solid #e8f0eb;
@@ -298,18 +293,6 @@
     .summary-row:last-of-type { border-bottom: none; }
     .summary-row .lab { color: #68776f; }
     .summary-row .val { font-weight: 700; color: var(--dark); text-align: right; }
-    .summary-price {
-      margin: 18px 0 20px;
-      background: var(--light-green);
-      border-radius: 14px;
-      padding: 16px 18px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .summary-price .lab { font-size: 13px; color: #4c5d54; font-weight: 600; }
-    .summary-price .amt {
-      font-family: "Manrope", sans-serif;
-      font-size: 28px; font-weight: 800; color: var(--green);
-    }
     .book-wa-btn {
       width: 100%; padding: 16px; font-size: 16px;
       border-radius: 14px;
@@ -325,10 +308,6 @@
       background: white; border-top: 1px solid var(--border);
       padding: 12px 16px; box-shadow: 0 -8px 30px rgba(0,0,0,.08);
       align-items: center; gap: 12px;
-    }
-    .mobile-book-bar .mb-price {
-      font-family: "Manrope", sans-serif;
-      font-size: 20px; font-weight: 800; color: var(--green);
     }
     .mobile-book-bar .mb-sub { font-size: 11px; color: #68776f; }
     .mobile-book-bar .btn { flex: 1; padding: 14px; border-radius: 12px; }
@@ -503,7 +482,6 @@
       section { padding: 52px 0; }
       .hero-card { left: 10px; right: 10px; bottom: 12px; }
       .svc-card-top { flex-direction: column; }
-      .svc-price-hint { margin-top: 4px; }
     }
   </style>
 </head>
@@ -538,15 +516,15 @@
         </div>
         <h1>A Deeper Clean.<br><span>A Better Finish.</span></h1>
         <p class="hero-text">
-          Choose Standard, Luxury or Empty Flat. See the price instantly.
+          Choose Standard, Luxury or Empty Flat based on your cleaning needs.
           Book on WhatsApp in seconds.
         </p>
         <div class="hero-buttons">
-          <a href="#packages" class="btn btn-primary">Select Service & Price</a>
+          <a href="#packages" class="btn btn-primary">Select Your Service</a>
           <a href="tel:+919321879581" class="btn btn-outline">📞 Call +91 93218 79581</a>
         </div>
         <div class="hero-trust">
-          <span><b>✓</b> Transparent pricing</span>
+          <span><b>✓</b> Clear service details</span>
           <span><b>✓</b> Trained team</span>
           <span><b>✓</b> Mumbai wide</span>
         </div>
@@ -596,8 +574,8 @@
     <div class="container">
       <div class="section-head">
         <div class="section-label">Book Your Cleaning</div>
-        <h2>Choose service · See price · Send on WhatsApp</h2>
-        <p>Tap a package, pick your home size, check the price — then enquire in one click.</p>
+        <h2>Choose your package · Select home size · Enquire on WhatsApp</h2>
+        <p>Tap a package, pick your home size, then enquire on WhatsApp in one click.</p>
       </div>
 
       <div class="book-layout">
@@ -614,7 +592,6 @@
                   <div class="tag">Surface & exterior focused</div>
                 </div>
               </div>
-              <div class="svc-price-hint">From ₹3,499</div>
             </div>
             <div class="svc-includes">
               <span>Floor scrub & mop</span>
@@ -636,7 +613,6 @@
                   <div class="tag">Complete interior + exterior</div>
                 </div>
               </div>
-              <div class="svc-price-hint">From ₹3,999</div>
             </div>
             <div class="svc-includes">
               <span>Everything in Standard</span>
@@ -658,7 +634,6 @@
                   <div class="tag">Ideal for move-in / move-out</div>
                 </div>
               </div>
-              <div class="svc-price-hint">From ₹2,999</div>
             </div>
             <div class="svc-includes">
               <span>Full floor clean</span>
@@ -693,17 +668,13 @@
             <span class="lab">Home size</span>
             <span class="val" id="sumSize">1 BHK</span>
           </div>
-
-          <div class="summary-price">
-            <div class="lab">Estimated price</div>
-            <div class="amt" id="sumPrice">₹4,999</div>
           </div>
 
           <button type="button" class="btn btn-primary book-wa-btn" onclick="sendWhatsApp()">
             💬 Send enquiry on WhatsApp
           </button>
           <p class="book-note">
-            Final price may vary with property condition & accessibility.
+            Service requirements may vary with property condition & accessibility.
             Sofa, mattress & carpet available as add-ons.
           </p>
         </div>
@@ -715,7 +686,6 @@
   <!-- Mobile sticky book bar -->
   <div class="mobile-book-bar" id="mobileBar">
     <div>
-      <div class="mb-price" id="mbPrice">₹4,999</div>
       <div class="mb-sub" id="mbSub">Luxury · 1 BHK</div>
     </div>
     <button type="button" class="btn btn-primary" onclick="sendWhatsApp()">WhatsApp</button>
@@ -815,8 +785,8 @@
         </div>
         <div class="step-card">
           <div class="step-num">2</div>
-          <h3>Check Price</h3>
-          <p>See estimated price instantly before you enquire.</p>
+          <h3>Choose Your Service</h3>
+          <p>Choose your preferred cleaning service before you enquire.</p>
         </div>
         <div class="step-card">
           <div class="step-num">3</div>
@@ -846,9 +816,9 @@
           <p>Dust, wet wipe, then dry and finish for a more detailed cleaning process.</p>
         </div>
         <div class="why-card">
-          <div class="num">02 / PRICING</div>
-          <h3>See Price First</h3>
-          <p>Clear packages and live price so you know what you’re paying before you enquire.</p>
+          <div class="num">02 / PACKAGES</div>
+          <h3>Clear Package Options</h3>
+          <p>Clear package options so you can choose the service that suits your home.</p>
         </div>
         <div class="why-card">
           <div class="num">03 / TEAM</div>
@@ -864,8 +834,8 @@
       <div class="info-box">
         <h3>📌 Important Information</h3>
         <ul>
-          <li>Prices are based on standard size and condition of the property.</li>
-          <li>Final pricing may vary with property condition, dirt level and accessibility.</li>
+          <li>Service requirements may vary based on the size and condition of the property.</li>
+          <li>Final service details are confirmed after your enquiry.</li>
           <li>Heavy stains, paint marks or cement deposits may attract extra charges.</li>
           <li>Sofa, mattress, carpet and other specialised services are available as add-ons.</li>
           <li>Cleaning is performed on accessible areas only.</li>
@@ -895,7 +865,7 @@
         </details>
         <details class="faq-item">
           <summary>How do I book?</summary>
-          <p>Select a service and home size in the booking section, check the estimated price, then tap “Send enquiry on WhatsApp”. Or call +91 93218 79581.</p>
+          <p>Select a service and home size in the booking section, then tap “Send enquiry on WhatsApp”. Or call +91 93218 79581.</p>
         </details>
       </div>
     </div>
@@ -904,8 +874,8 @@
   <section class="cta">
     <div class="container">
       <h2>Ready for a Cleaner Space?</h2>
-      <p>Pick your package, see the price, and send an enquiry on WhatsApp in under a minute.</p>
-      <a href="#packages" class="btn btn-primary">Select Service & Price</a>
+      <p>Pick your package, choose your home size, and send an enquiry on WhatsApp in under a minute.</p>
+      <a href="#packages" class="btn btn-primary">Select Your Service</a>
     </div>
   </section>
 
@@ -963,7 +933,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <strong>Shreya Cleaning Services</strong>
-          <p>Professional deep cleaning for homes in Mumbai. Standard, Luxury & Empty Flat packages with clear pricing.</p>
+          <p>Professional deep cleaning for homes in Mumbai. Standard, Luxury & Empty Flat packages for different cleaning needs.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
@@ -987,14 +957,7 @@
 
   <a href="https://wa.me/918657550058?text=Hello%20Shreya%20Cleaning%20Services%2C%20I%20want%20to%20know%20more%20about%20your%20cleaning%20services."
      class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-
   <script>
-    const prices = {
-      standard: { '1rk': 3499, '1bhk': 3999, '2bhk': 5499, '3bhk': 6999, '4bhk': 9499 },
-      luxury:   { '1rk': 3999, '1bhk': 4999, '2bhk': 7499, '3bhk': 9999, '4bhk': 14999 },
-      empty:    { '1rk': 2999, '1bhk': 3499, '2bhk': 4999, '3bhk': 6499, '4bhk': 8999 }
-    };
-
     const packageNames = {
       standard: 'Standard Deep Cleaning',
       luxury: 'Luxury Deep Cleaning',
@@ -1008,31 +971,22 @@
     let currentPkg = 'luxury';
     let currentSize = '1bhk';
 
-    function formatPrice(n) {
-      return '₹' + n.toLocaleString('en-IN');
-    }
-
     function refreshUI() {
-      const price = prices[currentPkg][currentSize];
-
-      // Service cards
       document.querySelectorAll('.svc-card').forEach(function(card) {
         card.classList.toggle('active', card.dataset.pkg === currentPkg);
       });
 
-      // Size pills
       document.querySelectorAll('.size-pill').forEach(function(pill) {
         pill.classList.toggle('active', pill.dataset.size === currentSize);
       });
 
-      // Summary
       document.getElementById('sumService').textContent = packageNames[currentPkg];
       document.getElementById('sumSize').textContent = sizeNames[currentSize];
-      document.getElementById('sumPrice').textContent = formatPrice(price);
 
-      // Mobile bar
-      document.getElementById('mbPrice').textContent = formatPrice(price);
-      document.getElementById('mbSub').textContent = packageNames[currentPkg].replace(' Deep Cleaning', '') + ' · ' + sizeNames[currentSize];
+      const mbSub = document.getElementById('mbSub');
+      if (mbSub) {
+        mbSub.textContent = packageNames[currentPkg].replace(' Deep Cleaning', '') + ' · ' + sizeNames[currentSize];
+      }
     }
 
     function pickService(pkg) {
@@ -1046,14 +1000,12 @@
     }
 
     function sendWhatsApp() {
-      const price = prices[currentPkg][currentSize];
       const message =
         'Hello Shreya Cleaning Services,%0A%0A' +
-        'I want to book the following:%0A%0A' +
+        'I want to enquire about the following:%0A%0A' +
         '📦 Service: ' + packageNames[currentPkg] + '%0A' +
-        '🏠 Home size: ' + sizeNames[currentSize] + '%0A' +
-        '💰 Estimated price: ' + formatPrice(price) + '%0A%0A' +
-        'Please confirm availability and next steps.';
+        '🏠 Home size: ' + sizeNames[currentSize] + '%0A%0A' +
+        'Please share the service details and confirm availability.';
       window.open('https://wa.me/918657550058?text=' + message, '_blank');
     }
 
